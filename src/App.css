@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: var(--background-color);;
+  background-color: var(--background-color);
 }
 
 .App-logo {
@@ -42,7 +42,8 @@
 
 :root {
   --text-color: ivory;
-  --background-color: #282c34;
+  --background-color: #242933;
+  --accent-color: rgb(1, 53, 102);
 }
 
 
@@ -50,6 +51,7 @@
 /* Google Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 
 
@@ -60,11 +62,15 @@
   text-align: start;
   padding-top: 15px;
   padding-left: 125px;
+  /* background-color: rgba(40, 44, 52); */
+  position: sticky;
+  z-index: 9999;
+  top: 0px;
 }
 
 .nav-container {
  color: var(--text-color);
- font-size: xxx-large;
+ font-size: xx-large;
  font-family: 'Climate Crisis';
 }
 
@@ -78,6 +84,7 @@
 .columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 90px;
 }
 
 .columns > * {
@@ -87,4 +94,37 @@ padding: 1rem;
 
 .hero-text {
   font-size: xx-large;
+  font-family: 'Russo One', sans-serif;
+  text-align: start;
+  color: var(--text-color);
+}
+
+.hero-img {
+  background-image: url(./assets/Images/Subject\ 2.png);
+  background-size: cover;
+  background-position: center;
+  opacity: .8;
+}
+
+.p-text {
+  font-size: medium;
+  color: var(--text-color);
+  font-family: 'Russo One', sans-serif;
+}
+
+.scroll-more {
+  border-bottom: solid rgb(8, 81, 150);
+  color: var(--text-color);
+  transition: .5s;
+}
+
+.scroll-more:hover {
+  padding-left: 10px;
+  transition: .5s;
+  border-bottom: solid rgb(42, 134, 219);
+}
+
+.my-skillset {
+  color: rgb(5, 106, 201);
+  font-size: large;
 }
