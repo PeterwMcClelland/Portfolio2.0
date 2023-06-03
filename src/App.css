@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: var(--background-color);;
 }
 
 .App-logo {
@@ -35,4 +36,55 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+:root {
+  --text-color: ivory;
+  --background-color: #282c34;
+}
+
+
+
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis');
+
+
+
+/* Hero Section */
+
+.nav {
+  height: 80px;
+  text-align: start;
+  padding-top: 15px;
+  padding-left: 125px;
+}
+
+.nav-container {
+ color: var(--text-color);
+ font-size: xxx-large;
+ font-family: 'Climate Crisis';
+}
+
+.main-section {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  height: 100%;
+}
+
+/**/
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.columns > * {
+padding: 1rem;
+}
+/**/
+
+.hero-text {
+  font-size: xx-large;
 }
