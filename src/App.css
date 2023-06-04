@@ -140,14 +140,24 @@ border-radius: 15px;
   color: var(--text-color);
   transition: .5s;
   padding-top: 30px;
+  padding-right: 15px;
   
 }
 
 .scroll-more:hover {
-  padding-left: 10px;
+  padding-top: 10px;
   transition: .5s;
   border-bottom: solid rgb(46, 148, 244);
+  color: rgb(46, 148, 244);
   cursor: pointer;
+}
+
+.scroll-nav {
+  display: flex;
+  font-size: xx-large;
+  font-family: 'Russo One', sans-serif;
+  text-align: start;
+  justify-content: center;
 }
 
 
@@ -166,11 +176,8 @@ border-radius: 15px;
   color: var(--text-color);
 }
 
-/* Icons */
 
-/* .icon-container {
-  
-} */
+/* Icons */
 
 .mongodb {
   background-image: url(./assets/Images/icons8-mongodb.svg);
@@ -192,8 +199,29 @@ background-size: contain;
 border-radius: 15px;
 height: 100%;
 background-size: contain;
+size: 10px;
 }
 
+.icon-container {
+  align-self: center;
+}
+
+
+/* Education */
+
+.education-text {
+  font-size: larger;
+  font-family: 'Russo One', sans-serif;
+  text-align: start;
+  color: rgb(5, 106, 201);
+}
+
+.resume-link {
+  font-size: xx-large;
+  font-family: 'Russo One', sans-serif;
+  text-align: start;
+  color: var(--text-color);
+}
 
 @keyframes fadeIn {
   0% { opacity: 0; }

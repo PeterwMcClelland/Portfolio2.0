@@ -1,8 +1,12 @@
 import React from 'react';
 
-function HeroSection({ skillRef }) {
+function HeroSection({ skillRef, eduRef }) {
   const scrollToSkill = () => {
     skillRef.current.scrollIntoView({ behavior: "smooth" });
+  }
+
+  const scrollToEducation = () => {
+    eduRef.current.scrollIntoView({ behavior: "smooth" });
   }
 
   return (
@@ -20,13 +24,20 @@ function HeroSection({ skillRef }) {
           have extensive experience with layout design, integrated APIs
           and building dynamic interactive user interfaces.
           </p>
-          <p className='scroll-more' onClick={scrollToSkill}>SkillSet</p>
+          
           </div>
           <div className='hero-img'>
             
           </div>
+          
         </div>
       </div>
+      <div className='scroll-nav'>
+            <p className='scroll-more' onClick={scrollToSkill}>SkillSet</p>
+            <p className='scroll-more' onClick={scrollToEducation}>Education</p>
+            <p className='scroll-more'>Projects</p>
+            <p className='scroll-more'>Contact</p>
+          </div>
     </body>
   )
 }
