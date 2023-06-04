@@ -1,11 +1,12 @@
 import React from 'react'
-import { LoremIpsum } from 'react-lorem-ipsum';
+// import { LoremIpsum } from 'react-lorem-ipsum';
+// import Icon from '../../assets/Images/icons8-mongodb-96.png';
 
 function Skillset() {
   return (
     <div className='main-section'>
         <div className='columns'>
-          <div className='hero-text'>
+          <div className='skill-text'>
             <p className='my-skillset'>
                 My Skillset
             </p>
@@ -15,9 +16,11 @@ function Skillset() {
             </h2>
 
           </div>
-          <div className='p-text'>
-            ljaldjcb
-          <LoremIpsum p={2} />
+          <div className='icon-container'>
+          <div className='mongodb'>
+          <div className='HTML5'></div>
+                
+            </div>
           </div>
         </div>
     </div>

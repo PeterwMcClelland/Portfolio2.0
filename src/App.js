@@ -1,8 +1,11 @@
 import './App.css';
 import HeroSection from './components/HeroSection/herosection';
 import SkillSet from './components/SkillSet/skillset'
+import { useRef } from 'react';
 
 function App() {
+  const skillRef = useRef();
+
   return (
     <div className="App">
       <div className='nav'>
@@ -10,8 +13,10 @@ function App() {
         PM
       </div>
       </div>
-      <HeroSection></HeroSection>
-      <SkillSet></SkillSet>
+      <HeroSection skillRef={skillRef}></HeroSection>
+      <div ref={skillRef}>
+        <SkillSet></SkillSet>
+      </div>
     </div>
   );
 }
