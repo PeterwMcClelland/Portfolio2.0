@@ -120,13 +120,14 @@ padding: 1rem;
 }
 
 .hero-img {
-  background-image: url(./assets/Images/Subject\ 2.png);
+  background-image: url(./assets/Images/Subject\ 4.png);
   background-size: 90%;
   background-position: center;
   border-radius: 15px;
   animation: fadeIn 5s; 
   background-repeat: no-repeat;
-border-radius: 15px;
+  border-radius: 15px;
+  
 }
 
 .p-text {
