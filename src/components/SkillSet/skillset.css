@@ -1,0 +1,10 @@
+@keyframes fallIntoPlace {
+    from { transform: translateY(-100px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+  }
+  
+  .icons.fallIntoPlace {
+    animation-name: fallIntoPlace;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+  }

@@ -52,6 +52,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis');
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 
 
 
@@ -117,6 +118,7 @@ padding: 1rem;
   font-family: 'Russo One', sans-serif;
   text-align: start;
   color: var(--text-color);
+  
 }
 
 .hero-img {
@@ -131,22 +133,23 @@ padding: 1rem;
 }
 
 .p-text {
-  font-size: medium;
+  font-size: large;
   color: var(--text-color);
-  font-family: 'Russo One', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  align-self: center;
 }
 
 .scroll-more {
   border-bottom: solid rgb(7, 85, 32);
   color: var(--text-color);
   transition: .5s;
-  padding-top: 30px;
+  padding-top: 15px;
   padding-right: 15px;
   
 }
 
 .scroll-more:hover {
-  padding-top: 10px;
+  padding-top: 3px;
   transition: .5s;
   border-bottom: solid rgb(10, 134, 49);
   color: rgb(10, 134, 49);
@@ -166,7 +169,7 @@ padding: 1rem;
 
 .my-skillset {
   color: rgb(5, 106, 201);
-  font-size: large;
+  font-size: x-large;
 }
 
 .skill-text {
@@ -180,10 +183,7 @@ padding: 1rem;
 
 /* Icons */
 
-.icons:hover {
-  animation: shake .5s infinite;
-  
-}
+
 
 .icon-container {
   align-self: center;
@@ -240,6 +240,8 @@ padding: 1rem;
 }
 
 
+
+
 /* Education */
 
 .education-text {
@@ -266,15 +268,16 @@ padding: 1rem;
 .hyper-link {
   text-decoration: none;
   color: var(--text-color);
-  font-size: xxx-large;
+  font-size: x-large;
   font-family: 'Russo One', sans-serif;
   text-align: start;
-  
+  transition: 1s;
 }
 
 .hyper-link:hover {
   color: rgb(10, 134, 49);;
   transition: 1s;
+  padding-left: 10px;
 }
 
 .resume {

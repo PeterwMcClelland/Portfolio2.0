@@ -1,12 +1,20 @@
 import React from 'react';
 
-function HeroSection({ skillRef, eduRef }) {
+function HeroSection({ skillRef, eduRef, projectRef, contactRef }) {
   const scrollToSkill = () => {
     skillRef.current.scrollIntoView({ behavior: "smooth" });
   }
 
   const scrollToEducation = () => {
     eduRef.current.scrollIntoView({ behavior: "smooth" });
+  }
+
+  const scrollToProject = () => {
+    projectRef.current.scrollIntoView({ behavior: "smooth" });
+  }
+
+  const scrollToContact = () => {
+    contactRef.current.scrollIntoView({ behavior: "smooth" });
   }
 
   return (
@@ -35,12 +43,13 @@ function HeroSection({ skillRef, eduRef }) {
       <div className='scroll-nav'>
             <p className='scroll-more' onClick={scrollToSkill}>SkillSet</p>
             <p className='scroll-more' onClick={scrollToEducation}>Education</p>
-            <p className='scroll-more'>Projects</p>
-            <p className='scroll-more'>Contact</p>
+            <p className='scroll-more' onClick={scrollToProject}>Projects</p>
+            <p className='scroll-more' onClick={scrollToContact}>Contact</p>
           </div>
     </body>
   )
 }
 
 export default HeroSection;
+
 
