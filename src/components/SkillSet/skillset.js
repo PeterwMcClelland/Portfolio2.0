@@ -25,16 +25,16 @@ function Skillset() {
           </div>
           <div className='icon-container'>
             <div>
-          <HTML5 className='HTML5'/>
-          <CSS />
-          <JS />
-          <MongoDB />
+          <HTML5 id='HTML5' className='icons'/>
+          <CSS id='CSS' className='icons' />
+          <JS id='js' className='icons' />
+          <MongoDB id='mongodb' className='icons' />
             </div>
             <div>
-              <ReactNative />
-              <ExpressJS />
-              <NodeJS />
-              <Heroku />
+              <ReactNative id='react' className='icons' />
+              <ExpressJS id='express' className='icons' />
+              <NodeJS id='node' className='icons' />
+              <Heroku id='heroku' className='icons' />
             </div>
           </div>     
             </div>
