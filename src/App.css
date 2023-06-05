@@ -89,7 +89,7 @@
 
 .dot {
   text-decoration: none;
-  color: rgb(5, 106, 201);
+  color: rgb(10, 134, 49);
   font-size: 75px;
   font-family: initial;
 }
@@ -137,7 +137,7 @@ padding: 1rem;
 }
 
 .scroll-more {
-  border-bottom: solid rgb(8, 81, 150);
+  border-bottom: solid rgb(7, 85, 32);
   color: var(--text-color);
   transition: .5s;
   padding-top: 30px;
@@ -148,8 +148,8 @@ padding: 1rem;
 .scroll-more:hover {
   padding-top: 10px;
   transition: .5s;
-  border-bottom: solid rgb(46, 148, 244);
-  color: rgb(46, 148, 244);
+  border-bottom: solid rgb(10, 134, 49);
+  color: rgb(10, 134, 49);
   cursor: pointer;
 }
 
@@ -273,7 +273,7 @@ padding: 1rem;
 }
 
 .hyper-link:hover {
-  color: rgb(5, 106, 201);
+  color: rgb(10, 134, 49);;
   transition: 1s;
 }
 
