@@ -1,24 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ScrollTrigger from 'react-scroll-trigger'
 import '../Projects/project.css'
 
 function Project() {
+  const [animation, setAnimation] = useState(false)
+
+  const onEnterViewport = () => {
+    setAnimation(true)
+  }
+
+ 
+
   return (
-    <main className='projects-container'>
-<div class="parent">
-    <div className="div1">
-       <p className='title-projects'>Projects</p> 
-    </div>
-    <div className="div2">
-        <div className='p1-img'></div>
-    </div>
-    <div className="div3">
-        <div className='p2-img'></div>
-    </div>
-    <div className="div4">
-        <div className='p3-img'></div>
-    </div>
-</div>
-    </main>
+    <ScrollTrigger onEnter={onEnterViewport}>
+      <main className={`projects-container ${animation ? 'slideFromRight' : ''}`}>
+        <div className="parent">
+          <div className="div1">
+            <p className='title-projects'>Projects</p> 
+          </div>
+          <div className={`div2 ${animation ? 'slideFromRight' : ''}`}>
+            <div className='p1-img'>
+              <p className='proj-title'>This Weekend</p>
+            </div>
+          </div>
+          <div className={`div3 ${animation ? 'slideFromRight' : ''}`}>
+            <div className='p2-img'>
+              <p className='proj-title'> Newport House</p>
+            </div>
+          </div>
+          <div className={`div4 ${animation ? 'slideFromRight' : ''}`}>
+            <div className='p3-img'>
+              <p className='proj-title'>Wine Index</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </ScrollTrigger>
   )
 }
 
