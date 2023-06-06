@@ -1,0 +1,18 @@
+@keyframes slideInFromLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to   { transform: translateX(0); opacity: 1; }
+  }
+
+  .slideInFromLeft-h1 {
+    animation: slideInFromLeft 1s forwards;
+  }
+
+  .slideInFromLeft-edu {
+    animation: slideInFromLeft 2s forwards;
+  }
+
+  .slideInFromLeft-res {
+    animation: slideInFromLeft 1.5s forwards;
+  }
+
+  

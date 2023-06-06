@@ -23,11 +23,11 @@ function App() {
       <div ref={skillRef}>
         <SkillSet></SkillSet>
       </div>
-      <div ref={eduRef}>
-        <Education></Education>
-      </div>
       <div ref={projectRef}>
         <Project></Project>
+      </div>
+      <div ref={eduRef}>
+        <Education></Education>
       </div>
       <div ref={contactRef}>
         <Contact></Contact>

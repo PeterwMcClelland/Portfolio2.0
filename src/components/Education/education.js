@@ -1,24 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 // import { LoremIpsum } from 'react-lorem-ipsum';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
+import ScrollTrigger from 'react-scroll-trigger';
 
 import Resume from '../../assets/PDF/Peter McClelland Resume.pdf';
 import UT from '../../assets/PDF/McClelland_Peter_TCH-5003-052.pdf'
 
+import '../Education/education.css';
 
 function Education() {
+    const [animation, setAnimation] = useState(false);
+
+  const onEnterViewport = () => {
+    setAnimation(true);
+  }
+
+//   const onExitViewport = () => {
+//     setAnimation(false);
+//   }
   return (
     <div className='main-section'>
+        <ScrollTrigger onEnter={onEnterViewport} >
         <div className='columns'>
             <div className='resume'>
-            <p className='education-text'>
+            <div className={`education-text ${animation ? 'slideInFromLeft-h1' : ''}`}>
                 Education
-            </p>
-            <div className='resume-link'>
+            </div>
+            <div className={`resume-link ${animation ? 'slideInFromLeft-res' : ''}`}>
                 <FontAwesomeIcon size='xs' icon={faFile} /><a className='hyper-link' href={Resume} target="blank"> Resume</a>
                 </div>
-            <div className='resume-link'>
+            <div className={`resume-link ${animation ? 'slideInFromLeft-edu' : ''}`}>
                 <FontAwesomeIcon size='xs' icon={faFile} /><a className='hyper-link' href={UT} target="blank"> UT Austin Certification</a>
                 </div>
             
@@ -33,6 +45,7 @@ function Education() {
             and growing with future projects.
             </div>
         </div>
+        </ScrollTrigger>
     </div>
   )
 }

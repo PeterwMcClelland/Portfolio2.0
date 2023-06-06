@@ -43,7 +43,7 @@
 :root {
   --text-color: ivory;
   --background-color: #000000;
-  --accent-color: rgb(16, 144, 33);
+  --accent-color: rgb(5, 106, 201);
 }
 
 
@@ -73,8 +73,8 @@
 .nav-container {
   color: var(--text-color);
   font-size: xx-large;
-  border-right: solid;
-  border-bottom: solid;
+  border-right: solid var(--accent-color);
+  border-bottom: solid var(--accent-color);
   width: fit-content;
   font-family: 'Climate Crisis';
   padding-right: 5px;
@@ -82,17 +82,37 @@
 
 .first {
   margin: 0;
+  animation: nameFromLeft 2s forwards;
 }
 
 .last {
   margin: 0px;
+  animation: nameFromRight 2s forwards;
+}
+
+@keyframes nameFromLeft {
+  0% { transform: translateX(-100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes nameFromRight {
+  0% { transform: translateX(100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
 }
 
 .dot {
+  top: 0;
   text-decoration: none;
   color: rgb(10, 134, 49);
   font-size: 75px;
   font-family: initial;
+  display: inline-block;
+  animation: dotFall 2s forwards;
+}
+
+@keyframes dotFall {
+  from { transform: translateY(-100vh); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
 }
 
 .main-section {
@@ -105,11 +125,11 @@
 .columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 90px;
+  padding: 80px;
 }
 
 .columns > * {
-padding: 1rem;
+padding: 0;
 }
 /**/
 
@@ -123,10 +143,10 @@ padding: 1rem;
 
 .hero-img {
   background-image: url(./assets/Images/Subject\ 4.png);
-  background-size: 90%;
+  background-size: 80%;
   background-position: center;
   border-radius: 15px;
-  animation: fadeIn 5s; 
+  animation: fadeIn 8s; 
   background-repeat: no-repeat;
   border-radius: 15px;
   
@@ -134,13 +154,16 @@ padding: 1rem;
 
 .p-text {
   font-size: large;
-  color: var(--text-color);
+  color: #a5a5a5;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   align-self: center;
+  animation: fadeIn 5s; 
+  border-left: solid var(--accent-color);
+  padding-left: 10px;
 }
 
 .scroll-more {
-  border-bottom: solid rgb(7, 85, 32);
+  border-bottom: solid var(--accent-color);
   color: var(--text-color);
   transition: .5s;
   padding-top: 15px;
@@ -162,6 +185,7 @@ padding: 1rem;
   font-family: 'Russo One', sans-serif;
   text-align: start;
   justify-content: center;
+  padding-bottom: 10%;
 }
 
 
@@ -170,85 +194,29 @@ padding: 1rem;
 .my-skillset {
   color: rgb(5, 106, 201);
   font-size: x-large;
+  border-bottom: solid var(--accent-color);
+  inline-size: fit-content;
 }
 
 .skill-text {
-  border-right: solid;
+  border-right: solid var(--accent-color);
   font-size: xx-large;
   font-family: 'Russo One', sans-serif;
   text-align: start;
   color: var(--text-color);
+  
 }
-
-
-/* Icons */
-
-
-
-.icon-container {
-  align-self: center;
-}
-
-#CSS {
-  animation: shake 18.5s infinite;
-}
-
-#mongodb {
-  animation: shake 18s infinite;
-}
-
-#heroku {
-  animation: shake 16s infinite;
-}
-
-#js {
-  animation: shake 14s infinite;
-}
-
-#express {
-  animation: shake 19s infinite;
-}
-
-#react {
-  animation: shake 19s infinite;
-}
-
-#node {
-  animation: shake 16.5s infinite;
-}
-
-#HTML5 {
-  animation: shake 17s infinite;
-}
-
-#express {
-  animation: shake 17.5s infinite;
-}
-
-
-
-@keyframes shake {
-  0%, 10% { transform: translate(0, 0) rotate(0deg); }
-  22%, 28% { transform: translate(-1px, -2px) rotate(-1deg); }
-  30%, 38% { transform: translate(-3px, 0px) rotate(1deg); }
-  40%, 48% { transform: translate(3px, 2px) rotate(0deg); }
-  50%, 58% { transform: translate(1px, -1px) rotate(1deg); }
-  60%, 68% { transform: translate(-1px, 2px) rotate(-1deg); }
-  70%, 78% { transform: translate(-3px, 1px) rotate(0deg); }
-  80%, 88% { transform: translate(3px, 1px) rotate(-1deg); }
-  90%, 100% { transform: translate(0, 0) rotate(0deg); }
-}
-
-
 
 
 /* Education */
 
 .education-text {
-  font-size: larger;
+  font-size: x-large;
   font-family: 'Russo One', sans-serif;
   text-align: start;
   color: rgb(5, 106, 201);
+  border-bottom: solid var(--accent-color);
+  inline-size: fit-content;
 }
 
 .resume-link {
@@ -271,12 +239,12 @@ padding: 1rem;
   font-size: x-large;
   font-family: 'Russo One', sans-serif;
   text-align: start;
-  transition: 1s;
+  transition: .5s;
 }
 
 .hyper-link:hover {
   color: rgb(10, 134, 49);;
-  transition: 1s;
+  transition: .5s;
   padding-left: 10px;
 }
 

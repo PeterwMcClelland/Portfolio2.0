@@ -1,0 +1,82 @@
+.projects-title {
+    color: rgb(5, 106, 201);
+  font-size: x-large;
+  border-bottom: solid var(--accent-color);
+  inline-size: fit-content;
+}
+
+.projects-container {
+  font-size: xx-large;
+  font-family: 'Russo One', sans-serif;
+  text-align: start;
+  color: var(--text-color);
+  padding: 80px;
+  height: 400px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: inherit;
+    }
+
+    .title-projects {
+        
+        color: rgb(5, 106, 201);
+        font-size: x-large;
+        border-bottom: solid var(--accent-color);
+        inline-size: fit-content; 
+        font-family: 'Russo One', sans-serif;
+        text-align: start;
+    }
+
+    .p1-img {
+        background-image: url(../../assets/Images/background.png);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100%;
+        background-position: center;
+        border-radius: 5px;
+    }
+
+    .p2-img {
+        background-image: url(../../assets/Images/04599f12-2df1-4cb9-aac1-89c78ab0718c.webp);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100%;
+        background-position: center;
+        margin: 5px;
+        border-radius: 5px;
+    }
+
+    .p3-img {
+        background-image: url(../../assets/Images/il_fullxfull.2889660441_fkyo.webp);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100%;
+        background-position: center;
+        margin: 5px;
+        border-radius: 5px;
+    }
+    
+    .div1 { 
+        grid-area: 2 / 1 / 4 / 2;
+    }
+    .div2 { 
+        grid-area: 2 / 2 / 3 / 4; 
+        height: 200px;
+    }
+    .div3 { 
+        grid-area: 3 / 2 / 4 / 3; 
+        height: 200px;
+    }
+    .div4 { grid-area: 3 / 3 / 4 / 4; }

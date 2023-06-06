@@ -18,23 +18,25 @@ function Skillset() {
     setAnimation(true);
   }
 
-  const onExitViewport = () => {
-    setAnimation(false);
-  }
+  // const onExitViewport = () => {
+  //   setAnimation(false);
+  // }
 
   return (
     <div className='main-section'>
+<ScrollTrigger onEnter={onEnterViewport} >
       <div className='columns'>
-        <div className='skill-text'>
+        
+      <div className={`skill-text ${animation ? 'fallIntoPlace' : ''}`}>
           <p className='my-skillset'>
             My Skillset
           </p>
-          <h2>
+          <h2 className={`skill-animation ${animation ? 'slideInFromLeft' : ''}`}>
             Web Development, Interface Design &
             Site Deployment
           </h2>
         </div>
-        <ScrollTrigger onEnter={onEnterViewport} onExit={onExitViewport}>
+        
           <div className='icon-container'>
             <div className={`icons ${animation ? 'fallIntoPlace' : ''}`}>
               <HTML5 id='HTML5'/>
@@ -49,8 +51,9 @@ function Skillset() {
               <Heroku id='heroku'/>
             </div>
           </div>
-        </ScrollTrigger>     
+             
       </div>
+      </ScrollTrigger>
     </div>
   )
 }
