@@ -7,7 +7,7 @@
 
 .projects-container {
   font-size: xx-large;
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Jost', sans-serif;
   text-align: start;
   color: var(--text-color);
   padding: 80px;
@@ -25,11 +25,10 @@
 
     .title-projects {
         
-        color: rgb(5, 106, 201);
-        font-size: x-large;
-        border-bottom: solid var(--accent-color);
-        inline-size: fit-content; 
-        font-family: 'Russo One', sans-serif;
+        color: var(--accent-color);
+        font-size: xx-large;
+        /* border-bottom: solid var(--accent-color); */
+        inline-size: fit-content;
         text-align: start;
     }
 
@@ -95,7 +94,7 @@
         width: 100%;
         height: 100%;
         background: rgba(255, 255, 255, 0);
-        transition: background 0.3s ease;
+        transition: background 0.5s ease;
         pointer-events: none; 
     }
     
@@ -114,10 +113,11 @@
     }
     .div3 { 
         grid-area: 3 / 2 / 4 / 3; 
-        height: 200px;
+        height: 250px;
     }
     .div4 { 
         grid-area: 3 / 3 / 4 / 4; 
+        height: 250px;
     }
 
     .proj-title {
@@ -132,6 +132,30 @@
     padding-left: 5px;
     }
 
+   #github-link-proj {
+      font-size: larger;
+      border-top: solid white;
+      border-bottom: solid white;
+      border-left: solid white;
+      padding: large;
+      position: inherit;
+      transition: .3s;
+    }
+
+    .a-github {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #github-link-proj:hover {
+      border-left: solid var(--link-color);
+      border-bottom: solid var(--link-color);
+      border-top: solid var(--link-color);
+      transition: .3s;
+    }
+
     @keyframes slideFromRight {
         0% {
           transform: translateX(100%);
@@ -142,18 +166,63 @@
           opacity: 1;
         }
       }
+
+      .proj-txt-hover {
+        display: none;
+        position: absolute;
+        color: white;
+        z-index: 1000;
+        font-size: x-large;
+        font-family: 'Russo One';
+        border-left: solid;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 3px;
+      }
       
+      .p1-img:hover .proj-txt-hover,
+      .p2-img:hover .proj-txt-hover,
+      .p3-img:hover .proj-txt-hover  {
+        display: block;
+        
+      }
+
+      #built-with {
+        font-style: italic;
+        font-size: small;
+        
+      }
+
+      #repo {
+        font-style: italic;
+        font-size: small;
+        border-bottom: solid;
+        transition: .3s;
+      }
+
+      #repo:hover {
+        color: var(--link-color);
+        transition: .3s;
+        cursor: pointer;
+
+      }
+
+
+      a {
+        text-decoration: none;
+        color: var(--text-color);
+      }
       
 
       .slideFromRight.div2 {
-        animation: slideFromRight 2s forwards;
-      }
-
-      .slideFromRight.div3 {
         animation: slideFromRight 2.5s forwards;
       }
 
-      .slideFromRight.div4 {
+      .slideFromRight.div3 {
         animation: slideFromRight 3s forwards;
+      }
+
+      .slideFromRight.div4 {
+        animation: slideFromRight 3.5s forwards;
       }
       

@@ -11,8 +11,8 @@
 
   .skill-animation {
     /* border-right: solid var(--accent-color); */
-    font-size: xx-large;
-    font-family: 'Russo One', sans-serif;
+    
+    font-family: 'Jost', sans-serif;
     text-align: start;
     color: var(--text-color);
   }
