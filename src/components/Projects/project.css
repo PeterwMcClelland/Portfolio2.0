@@ -193,11 +193,13 @@
         
       }
 
+
       #repo {
         font-style: italic;
         font-size: small;
         border-bottom: solid;
         transition: .3s;
+        display: flex;
       }
 
       #repo:hover {

@@ -54,10 +54,12 @@ function Project() {
                 <div >Private Beach House Rental</div>
                   <p id='built-with'>
                     Built with: React, HTML, CSS, JavaScript, EmailJS & Heroku.
+                    
                     <span id='repo' className='proj-txt-hover'>
-                      <a href="https://github.com/PeterwMcClelland/Beach-House" target="_blank" rel="noopener noreferrer">
+                      <a id='repo-link' href="https://github.com/PeterwMcClelland/Beach-House" target="_blank" rel="noopener noreferrer">
                         Repository
                       </a>
+                  
                     </span>
                   </p>
               </div>

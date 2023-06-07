@@ -1,0 +1,12 @@
+.contact-title {
+    font-size: xx-large;
+  font-family: 'Jost', sans-serif;
+  color: var(--accent-color);
+}
+
+.education-h1 {
+    font-family: 'Jost', sans-serif;
+    color: white;
+    font-size: xxx-large;
+    margin: 0;
+}
