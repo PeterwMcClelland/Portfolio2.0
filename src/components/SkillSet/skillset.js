@@ -18,9 +18,6 @@ function Skillset() {
     setAnimation(true);
   }
 
-  // const onExitViewport = () => {
-  //   setAnimation(false);
-  // }
 
   return (
     <div className='main-section'>
@@ -29,7 +26,7 @@ function Skillset() {
         
       <div className={`skill-text ${animation ? 'fallIntoPlace' : ''}`}>
           <p className='my-skillset'>
-            My Skillset
+            My Skillset 
           </p>
           <h2 className={`skill-animation ${animation ? 'slideInFromLeft' : ''}`}>
             Web Development, Interface Design &
@@ -37,7 +34,8 @@ function Skillset() {
           </h2>
         </div>
         
-          <div className='icon-container'>
+
+          <div className='icon-container'><span className='one'></span>
             <div className={`icons ${animation ? 'fallIntoPlace' : ''}`}>
               <HTML5 id='HTML5'/>
               <CSS id='CSS'/>

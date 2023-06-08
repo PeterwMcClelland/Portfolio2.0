@@ -1,3 +1,8 @@
+.education-section {
+  padding: 80px;
+  display: inline-grid;
+}
+
 .contact-title {
     font-size: xx-large;
   font-family: 'Jost', sans-serif;
@@ -9,4 +14,11 @@
     color: white;
     font-size: xxx-large;
     margin: 0;
+}
+
+.icon-header {
+  /* font-size: xx-large; */
+  font-family: 'Jost', sans-serif;
+  color: white;
+  margin: 0;
 }

@@ -4,9 +4,10 @@ import '../Projects/project.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
+// import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 const gitIcon = <FontAwesomeIcon icon={faGithub} />
-
+// const linkIcon = <FontAwesomeIcon size='xs' icon={faLink} />
 
 
 function Project() {
@@ -22,17 +23,18 @@ function Project() {
       <main className={`projects-container ${animation ? 'slideFromRight' : ''}`}>
         <div className="parent">
           <div className="div1">
-            <p className='title-projects'>Work</p> 
-              
+            <p className='title-projects'>Work</p> <span className='two'></span>
               <h1>Recent Projects</h1>
+
               <div id='gitgub-link-proj' >
                 <a id='github-link-proj' className='a-github' href="https://github.com/PeterwMcClelland" target="_blank" rel="noopener noreferrer">
-                GitHub{gitIcon}
+                GitHub Profile {gitIcon}
                 </a>
               </div>
           
           </div>
           <div className={`div2 ${animation ? 'slideFromRight' : ''}`}>
+          <a href="https://thisweekend.herokuapp.com/" target="_blank" rel="noopener noreferrer">
             <div className='p1-img'>
               <div className='proj-txt-hover'>
                 <div >Portland Skate Spot Guide.</div>
@@ -43,12 +45,14 @@ function Project() {
                     </span>
                   </p>
               </div>
-              <div className='proj-title'>This Weekend
+              <div className='proj-title'>
+                This Weekend
               </div>
-              
             </div>
+            </a>
           </div>
           <div className={`div3 ${animation ? 'slideFromRight' : ''}`}>
+          <a href="https://newport-house.herokuapp.com/" target="_blank" rel="noopener noreferrer">
             <div className='p2-img'>
               <div className='proj-txt-hover'>
                 <div >Private Beach House Rental</div>
@@ -65,14 +69,16 @@ function Project() {
               </div>
               <p className='proj-title'> Newport House</p>
             </div>
+            </a>
           </div>
 
           <div className={`div4 ${animation ? 'slideFromRight' : ''}`}>
+          <a href="https://github.com/PeterwMcClelland/Wine-List" target="_blank" rel="noopener noreferrer">
             <div className='p3-img'>
               <div className='proj-txt-hover'>
                 <div>Wine Index For Service Industry Workers</div>
                   <p id='built-with'>
-                    Built with: Mongodb, Express, React, Node.js, JavaScript, HTML & CSS.
+                    Built with: Mongodb, Express, React, Node.js, JavaScript, HTML & CSS. (In Development)
                     <span id='repo' className='proj-txt-hover'>
                       <a href="https://github.com/PeterwMcClelland/Wine-List" target="_blank" rel="noopener noreferrer">
                         Repository
@@ -82,6 +88,7 @@ function Project() {
               </div>
             <p className='proj-title'>Wine Index</p>
           </div>
+          </a>
 
         </div>
         </div>
