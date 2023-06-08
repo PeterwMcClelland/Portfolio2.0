@@ -1,11 +1,20 @@
 import React from 'react'
 import '../Contact/contact.css';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+// import { faLinkedInIn } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+
+
+const gitIcon = <FontAwesomeIcon icon={faGithub} size='3x' />;
+const Envelope = <FontAwesomeIcon icon={faEnvelope} size='3x' />
+
 function Contact() {
   return (
       <div className='education-section'>
         <div className='contact-title'>
-          Next Steps
+          What Now?
         </div>
         <h1 className='education-h1'>
           Lets Connect.
@@ -21,8 +30,28 @@ function Contact() {
           and making a impact through web development.
           </p>
 
-          <h2 className='icon-header'>Feel To Reach Out Through my Platforms</h2>
+          <h2 className='icon-header'>
+            Feel To Reach Out Through my Platforms
+          </h2>
+
+          <footer className='contact-icons'>
+          <a href="https://github.com/PeterwMcClelland" target="_blank" rel="noopener noreferrer">
+            <div className='contact-gitIcon'>
+              {gitIcon}
+            </div>
+            </a>
+            <a href="mailto:peterwmcclelland@gmail.com">
+            <div className='contact-envolope'>
+              {Envelope}
+            </div>
+            </a>
+            <div className='contact-phone'>
+              971-205-4928
+            </div>
+          </footer>
       </div>
+
+    
       
   )
 }

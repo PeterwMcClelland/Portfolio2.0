@@ -22,3 +22,30 @@
   color: white;
   margin: 0;
 }
+
+.contact-icons {
+  text-decoration: none;
+  margin: 0;
+  padding: 15px;
+  gap: 10%;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.contact-gitIcon {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-envolope {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-phone {
+  color: white;
+  text-decoration: none;
+  font-family: 'Jost', sans-serif;
+  font-size: x-large;
+  align-self: center;
+}

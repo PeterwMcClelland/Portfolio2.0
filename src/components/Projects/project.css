@@ -141,7 +141,7 @@
     width: 100%;
     margin: 20px;
     font-size: x-large;
-    border-left: solid var(--accent-color);
+    border-left: solid 3px var(--accent-color);
     z-index: 9999;
     padding-left: 5px;
     }
