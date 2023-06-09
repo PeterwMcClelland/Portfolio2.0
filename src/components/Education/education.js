@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
 import ScrollTrigger from 'react-scroll-trigger';
 
-import Resume from '../../assets/PDF/Peter McClelland Resume.pdf';
+import Resume from '../../assets/PDF/PeterMcClellandCV.pdf';
 import UT from '../../assets/PDF/McClelland_Peter_TCH-5003-052.pdf'
 
 import '../Education/education.css';
