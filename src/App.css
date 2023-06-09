@@ -331,6 +331,12 @@ padding: 0;
   .div1 {
     display: none;
   }
+
+  .last,
+  .first {
+    text-align-last: start;
+  }
+
 }
 
 
@@ -338,7 +344,12 @@ padding: 0;
   .nav {
     padding-left: 10px;
   }
-  
+
+  .last,
+  .first {
+    text-align-last: start;
+  }
+
   .nav-container {
     font-size: x-large;
   }
