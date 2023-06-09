@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../Contact/contact.css';
-
+import ScrollTrigger from 'react-scroll-trigger';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 // import { faLinkedInIn } from '@fortawesome/free-solid-svg-icons';
@@ -11,8 +11,19 @@ const gitIcon = <FontAwesomeIcon icon={faGithub} size='3x' />;
 const Envelope = <FontAwesomeIcon icon={faEnvelope} size='3x' />
 
 function Contact() {
+
+  const [animation, setAnimation] = useState(false);
+
+  const onEnterViewport = () => {
+    setAnimation(true);
+  }
+
   return (
+    
+    
       <div className='education-section'>
+      <ScrollTrigger onEnter={onEnterViewport} >
+      <div className={`icons ${animation ? 'liftIntoPlace-contact' : ''}`}>
         <div className='contact-title'>
           What Now?
         </div>
@@ -49,7 +60,10 @@ function Contact() {
               971-205-4928
             </div>
           </footer>
+          </div>
+          </ScrollTrigger>
       </div>
+      
 
     
       

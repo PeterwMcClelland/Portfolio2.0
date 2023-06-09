@@ -49,3 +49,55 @@
   font-size: x-large;
   align-self: center;
 }
+
+.liftIntoPlace-contact {
+  animation: liftIntoPlace-contact 2s forwards;
+  display: flow-root;
+}
+
+
+@keyframes liftIntoPlace-contact {
+  from { transform: translateY(100vh); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+
+@media (max-width: 600px) {
+  .education-section {
+    padding: 20px;
+  }
+
+  .contact-title,
+  .education-h1,
+  .icon-header {
+    font-size: large;
+  }
+
+  .contact-icons {
+    flex-direction: column;
+  }
+
+  .contact-phone {
+    font-size: large;
+  }
+}
+
+@media (max-width: 425px) {
+  .education-section {
+    padding: 10px;
+  }
+
+  .contact-title,
+  .education-h1,
+  .icon-header {
+    font-size: medium;
+  }
+
+  .contact-icons {
+    flex-direction: column;
+  }
+
+  .contact-phone {
+    font-size: medium;
+  }
+}

@@ -42,8 +42,8 @@ function HeroSection({ skillRef, eduRef, projectRef, contactRef }) {
       </div>
       <div className='scroll-nav'>
             <p className='scroll-more' onClick={scrollToSkill}>SkillSet</p>
-            <p className='scroll-more' onClick={scrollToEducation}>Education</p>
             <p className='scroll-more' onClick={scrollToProject}>Projects</p>
+            <p className='scroll-more' onClick={scrollToEducation}>Education</p>
             <p className='scroll-more' onClick={scrollToContact}>Contact</p>
           </div>
     </body>
