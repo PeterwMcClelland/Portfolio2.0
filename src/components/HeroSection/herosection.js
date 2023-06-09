@@ -28,7 +28,7 @@ function HeroSection({ skillRef, eduRef, projectRef, contactRef }) {
           I am a creative and detail-oriented web developer
            based in Austin, Texas. I am passionate about creating
           functional, modern websites for the optimal user experience.
-          I am proficient in HTML, CSS, JavaScript, and React, and
+          I am proficient in HTML, CSS, JavaScript, MongoDB and React, and
           have extensive experience with layout design, integrated APIs
           and building dynamic interactive user interfaces.
           </p>
