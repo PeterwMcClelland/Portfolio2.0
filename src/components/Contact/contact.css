@@ -33,7 +33,7 @@
 }
 
 .contact-gitIcon {
-  
+
   color: white;
   text-decoration: none;
 }
@@ -91,7 +91,7 @@
   .contact-title,
   .education-h1,
   .icon-header {
-    font-size: medium;
+    font-size: larger;
   }
 
   .contact-icons {

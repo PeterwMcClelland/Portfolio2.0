@@ -285,7 +285,6 @@ padding: 0;
 
 
 
-
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
@@ -337,6 +336,10 @@ padding: 0;
     text-align-last: start;
   }
 
+  .nav {
+    padding-left: 15px;
+  }
+
 }
 
 
@@ -359,7 +362,11 @@ padding: 0;
   .education-text, 
   .resume-link, 
   .hyper-link {
-    font-size: medium;
+    font-size: large;
+  }
+
+  .nav {
+    padding-left: 15px;
   }
 }
 
