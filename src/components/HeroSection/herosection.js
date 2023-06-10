@@ -22,8 +22,8 @@ function HeroSection({ skillRef, eduRef, projectRef, contactRef }) {
       <div className='main-section'>
         <div className='columns'>
           <div className='hero-text'>
-          <h2 className='first'>Peter</h2>
-          <h1 className='last'>McClelland<span className='dot'>.</span></h1>
+            <h2 className='first'>Peter</h2>
+            <h1 className='last'>McClelland<span className='dot'>.</span></h1>
           <p className='p-text'>
           I am a creative and detail-oriented web developer
            based in Austin, Texas. I am passionate about creating
@@ -34,7 +34,7 @@ function HeroSection({ skillRef, eduRef, projectRef, contactRef }) {
           </p>
           
           </div>
-          <div className='hero-img'>
+           <div className='hero-img'>
             
           </div>
           

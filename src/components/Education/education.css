@@ -17,22 +17,5 @@
 
   .resume {
     display: inline-flexbox;
-    position: relative; /* Add this line */
+    position: relative;
   }
-
-  /* .resume::after {
-    content: "";
-    background-image: linear-gradient(to right, rgb(0, 0, 0), transparent 20%),
-    linear-gradient(to left, rgb(0, 0, 0), transparent 20%),
-    linear-gradient(to top, rgb(0, 0, 0), transparent 20%),
-    linear-gradient(to bottom, rgb(0, 0, 0), transparent 20%),
-    url(../../assets/Images/museums-victoria-Di7WfLcrJ_I-unsplash.jpg);
-    
-    background-size: cover;
-    opacity: 0.5; 
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-  } */

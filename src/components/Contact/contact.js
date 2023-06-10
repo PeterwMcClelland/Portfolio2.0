@@ -3,7 +3,6 @@ import '../Contact/contact.css';
 import ScrollTrigger from 'react-scroll-trigger';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-// import { faLinkedInIn } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 
@@ -22,14 +21,15 @@ function Contact() {
     
     
       <div className='education-section'>
-      <ScrollTrigger onEnter={onEnterViewport} >
+        <ScrollTrigger onEnter={onEnterViewport} >
       <div className={`icons ${animation ? 'liftIntoPlace-contact' : ''}`}>
         <div className='contact-title'>
           What Now?
         </div>
-        <h1 className='education-h1'>
+
+          <h1 className='education-h1'>
           Lets Connect.
-        </h1>
+          </h1>
           <p className='p-text'>
           Thank you for taking the time to explore my portfolio and
           getting to know a little about me. If you have any 
@@ -52,9 +52,9 @@ function Contact() {
             </div>
             </a>
             <a href="mailto:peterwmcclelland@gmail.com">
-            <div className='contact-envolope'>
-              {Envelope}
-            </div>
+              <div className='contact-envolope'>
+               {Envelope}
+              </div>
             </a>
             <div className='contact-phone'>
               971-205-4928

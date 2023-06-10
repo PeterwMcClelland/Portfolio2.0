@@ -16,9 +16,6 @@ function Education() {
     setAnimation(true);
   }
 
-//   const onExitViewport = () => {
-//     setAnimation(false);
-//   }
   return (
     <div className='main-section'>
         <ScrollTrigger onEnter={onEnterViewport} >

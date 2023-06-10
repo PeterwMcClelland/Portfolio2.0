@@ -43,12 +43,7 @@
 :root {
   --text-color: ivory;
   --background-color: #000000;
-  /* --accent-color: rgb(140, 59, 0); */
-  /* --accent-color: rgb(5, 106, 201); */
-  /* --accent-color: rgb(245, 168, 53); */
   --accent-color: #0041C7;
-  /* --link-color: rgb(10, 134, 49); */
-  /* --link-color: rgb(163, 204, 116); */
   --link-color: rgb(4, 68, 34)
 
   
@@ -73,7 +68,6 @@
   text-align: start;
   padding-top: 15px;
   padding-left: 125px;
-  /* background-color: rgba(40, 44, 52); */
   position: sticky;
   z-index: 9999;
   top: 0px;
@@ -206,12 +200,11 @@ padding: 0;
 .my-skillset {
   color: var(--accent-color);
   font-size: xx-large;
-  /* border-bottom: solid var(--accent-color); */
   inline-size: fit-content;
 }
 
 .skill-text {
-  position: relative; /* ensure the pseudo-element is positioned relative to this element */
+  position: relative;
   border-right: solid 2px var(--accent-color);
   font-size: xx-large;
   font-family: 'Jost', sans-serif;
@@ -219,24 +212,6 @@ padding: 0;
   color: var(--text-color);
   height: 500px;
 }
-
-/* .skill-text::after {
-  content: "";
-  background-image: linear-gradient(to right, rgb(0, 0, 0), transparent 20%),
-  linear-gradient(to left, rgb(0, 0, 0), transparent 20%),
-  linear-gradient(to top, rgb(0, 0, 0), transparent 20%),
-  linear-gradient(to bottom, rgb(0, 0, 0), transparent 20%),
-  url(./assets/Images/fardin-sk-4LL1khLu6g4-unsplash.jpg);
-  
-  background-size: cover;
-  opacity: 0.5; 
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; 
-} */
 
 
 /* Education */
@@ -246,7 +221,6 @@ padding: 0;
   font-family: 'Jost', sans-serif;
   text-align: start;
   color: var(--accent-color);
-  /* border-bottom: solid var(--accent-color); */
   inline-size: fit-content;
 }
 

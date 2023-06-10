@@ -5,29 +5,14 @@
   }
 
   .skill-animation {
-    /* border-right: solid var(--accent-color); */
-    
     font-family: 'Jost', sans-serif;
     text-align: start;
     color: var(--text-color);
   }
 
-  
-
   .slideInFromLeft {
     animation: slideInFromLeft 1.5s forwards;
   }
-
-  /* .one {
-    color: white;
-    font-size: 170px;
-    z-index: -1;
-    opacity: 0.15;
-    position: absolute;
-    bottom: 140px;
-    left: 30px;
-    font-family: 'Lobster', cursive;
-  } */
 
 
   /* Icons */
