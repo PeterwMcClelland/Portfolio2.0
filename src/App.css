@@ -76,7 +76,7 @@
 
 .nav-container {
   color: var(--text-color);
-  font-size: xx-large;
+  font-size: x-small;
   border-right: solid ;
   border-bottom: solid ;
   width: fit-content;
@@ -109,7 +109,7 @@
 .dot {
   top: 0;
   text-decoration: none;
-  color: rgb(37, 143, 40);
+  color: #258f28;
   font-size: 75px;
   font-family: initial;
   display: inline-block;
