@@ -22,7 +22,7 @@ function Skillset() {
   return (
     <div className='main-section'>
 <ScrollTrigger onEnter={onEnterViewport} >
-      <div className='columns'>
+      <div id='skills-columns' className='columns'>
         
       <div className={`skill-text ${animation ? 'fallIntoPlace' : ''}`}>
           <p className='my-skillset'>

@@ -1,5 +1,5 @@
 .education-section {
-  padding: 80px;
+  padding: 25px;
   display: inline-grid;
 }
 
@@ -38,14 +38,25 @@
 }
 
 .contact-gitIcon {
-
   color: rgb(255, 255, 255);
   text-decoration: none;
+  transition: .3s;
+}
+
+.contact-gitIcon:hover {
+  font-size: x-large;
+  transition: .3s;
 }
 
 .contact-envolope {
   color: white;
   text-decoration: none;
+  transition: .3s;
+}
+
+.contact-envolope:hover {
+  font-size: x-large;
+  transition: .3s;
 }
 
 .contact-phone {
@@ -54,6 +65,13 @@
   font-family: 'Jost', sans-serif;
   font-size: x-large;
   align-self: center;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.contact-phone:hover {
+  font-size: xx-large;
+  transition: .3s;
 }
 
 .liftIntoPlace-contact {
