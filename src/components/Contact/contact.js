@@ -31,8 +31,7 @@ function Contact() {
           Lets Connect.
           </h1>
           <p className='p-text'>
-          Thank you for taking the time to explore my portfolio and
-          getting to know a little about me. If you have any 
+          Thank you for taking the time to explore my portfolio. If you have any 
           projects or opportunities that you believe could benefit 
           from my skills in web development, or simply 
           want to discuss the the digital world, 
