@@ -1,6 +1,8 @@
 .App {
   text-align: center;
   background-color: var(--background-color);
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .App-logo {
@@ -44,9 +46,7 @@
   --text-color: ivory;
   --background-color: #000000;
   --accent-color: #0041C7;
-  --link-color: rgb(4, 68, 34)
-
-  
+  --link-color: rgb(4, 68, 34);
 }
 
 
@@ -273,14 +273,11 @@ padding: 0;
 @media screen and (max-width: 600px) {
   .columns {
     grid-template-columns: 1fr;
+    padding: 20px;
   }
 
   .main-section {
     text-align-last: center;
-  }
-
-  .columns {
-    padding: 20px;
   }
 
   .hero-text,
@@ -294,6 +291,10 @@ padding: 0;
     height: inherit;
   }
 
+  .scroll-nav {
+    overflow: scroll;
+  }
+
   .icon-container {
     display: flex;
     flex-direction: column;
@@ -305,9 +306,12 @@ padding: 0;
     justify-content: center;
     margin-bottom: 15px;
   }
+
   .div1 {
     display: none;
   }
+
+
 
   .last,
   .first {
@@ -329,6 +333,10 @@ padding: 0;
   .last,
   .first {
     text-align-last: start;
+  }
+
+  .scroll-nav {
+    overflow: scroll;
   }
 
   .nav-container {
