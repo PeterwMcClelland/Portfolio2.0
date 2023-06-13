@@ -28,7 +28,7 @@ function Contact() {
         </div>
 
           <h1 className='education-h1'>
-          Lets Connect.
+          Lets Connect<span id='dot'>.</span>
           </h1>
           <p className='p-text'>
           Thank you for taking the time to explore my portfolio. If you have any 

@@ -46,7 +46,7 @@
   --text-color: ivory;
   --background-color: #000000;
   --accent-color: #0041C7;
-  --link-color: rgb(4, 68, 34);
+  --link-color: #258f28;
 }
 
 
@@ -106,6 +106,15 @@
   100% { transform: translateX(0); opacity: 1; }
 }
 
+#dot {
+  top: 0;
+  text-decoration: none;
+  color: #258f28;
+  font-size: 75px;
+  font-family: initial;
+  display: inline-block;
+}
+
 .dot {
   top: 0;
   text-decoration: none;
@@ -128,14 +137,14 @@
 }
 
 #skills-columns {
-  padding: 80px 80px 20px 80px;
+  padding: 80px 25px 25px 25px;
 }
 
 /**/
 .columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 80px;
+  padding: 30px;
 }
 
 .columns > * {

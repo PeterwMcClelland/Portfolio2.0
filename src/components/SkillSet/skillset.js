@@ -30,7 +30,7 @@ function Skillset() {
           </p>
           <h2 className={`skill-animation ${animation ? 'slideInFromLeft' : ''}`}>
             Web Development, Interface Design &
-            Site Deployment
+            Site Deployment<span id='dot'>.</span>
           </h2>
         </div>
         

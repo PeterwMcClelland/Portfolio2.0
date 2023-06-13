@@ -24,7 +24,7 @@ function Project() {
         <div className="parent">
           <div className="div1">
             <p className='title-projects'>Work</p> <span className='two'></span>
-              <h1>Recent Projects</h1>
+              <h1 className='projects-h1'>Recent Projects<span id='dot'>.</span></h1>
 
               <div id='gitgub-link-proj' >
                 <a id='github-link-proj' className='a-github' href="https://github.com/PeterwMcClelland" target="_blank" rel="noopener noreferrer">
@@ -51,26 +51,24 @@ function Project() {
             </div>
             </a>
           </div>
-          <div className={`div3 ${animation ? 'slideFromRight' : ''}`}>
+        <div className={`div3 ${animation ? 'slideFromRight' : ''}`}>
           <a href="https://newport-house.herokuapp.com/" target="_blank" rel="noopener noreferrer">
             <div className='p2-img'>
               <div className='proj-txt-hover'>
                 <div >Private Beach House Rental</div>
                   <p id='built-with'>
                     Built with: React, HTML, CSS, JavaScript, EmailJS & Heroku.
-                    
                     <span id='repo' className='proj-txt-hover'>
                       <a id='repo-link' href="https://github.com/PeterwMcClelland/Beach-House" target="_blank" rel="noopener noreferrer">
                         Repository
                       </a>
-                  
                     </span>
                   </p>
               </div>
-              <p className='proj-title'> Newport House</p>
+                <p className='proj-title'> Newport House</p>
             </div>
-            </a>
-          </div>
+          </a>
+        </div>
 
           <div className={`div4 ${animation ? 'slideFromRight' : ''}`}>
           <a href="https://github.com/PeterwMcClelland/Wine-List" target="_blank" rel="noopener noreferrer">

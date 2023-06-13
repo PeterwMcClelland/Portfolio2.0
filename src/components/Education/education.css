@@ -15,6 +15,10 @@
     animation: slideInFromLeft 1.5s forwards;
   }
 
+  #education {
+    padding: 100px 30px 30px 30px;
+  }
+
   .resume {
     display: inline-flexbox;
     position: relative;

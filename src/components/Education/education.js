@@ -19,7 +19,7 @@ function Education() {
   return (
     <div className='main-section'>
         <ScrollTrigger onEnter={onEnterViewport} >
-        <div className='columns'>
+        <div id='education' className='columns'>
             <div className='resume'>
             <div className={`education-text ${animation ? 'slideInFromLeft-h1' : ''}`}>
                 Education

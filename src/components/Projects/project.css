@@ -10,8 +10,12 @@
   font-family: 'Jost', sans-serif;
   text-align: start;
   color: var(--text-color);
-  padding: 80px;
+  padding: 30px;
   height: 400px;
+}
+
+.projects-h1 {
+  text-align: center;
 }
 
 .parent {
@@ -23,14 +27,14 @@
     height: inherit;
     }
 
-    .title-projects {
+.title-projects {
         color: var(--accent-color);
         font-size: xx-large;
         inline-size: fit-content;
         text-align: start;
     }
 
-    .p1-img {
+.p1-img {
         background-image:  url(../../assets/Images/background.png), linear-gradient(80deg, #000, rgba(0, 0, 0, 0.8) 59%, transparent) ;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -45,7 +49,7 @@
         
     }
 
-    .p2-img {
+.p2-img {
         background-image: url(../../assets/Images/04599f12-2df1-4cb9-aac1-89c78ab0718c.webp);
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -258,7 +262,6 @@
           height: auto;
         }
       
-        /* Responsive adjustments for your text */
         .proj-txt-hover {
           font-size: small;
         }
