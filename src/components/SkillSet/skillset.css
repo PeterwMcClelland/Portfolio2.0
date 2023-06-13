@@ -90,6 +90,10 @@
     .columns {
       grid-template-columns: 1fr;
     }
+
+    #dot {
+      font-size: 35px;
+    }
     
     .my-skillset, .skill-text {
       font-size: large;
