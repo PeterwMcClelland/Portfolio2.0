@@ -82,6 +82,7 @@
   width: fit-content;
   font-family: 'Climate Crisis';
   padding-right: 5px;
+  cursor: pointer;
 }
 
 .first {

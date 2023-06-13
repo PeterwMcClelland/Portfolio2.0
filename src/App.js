@@ -11,15 +11,20 @@ function App() {
   const eduRef = useRef();
   const projectRef = useRef();
   const contactRef = useRef();
+  const homeRef = useRef();
+
+  const scrollToHome = () => {
+    homeRef.current.scrollIntoView({ behavior: "smooth" });
+  }
 
   return (
-    <div className="App">
+    <div ref={homeRef} className="App">
       <div className='nav'>
-        <div className='nav-container'>
-          PM
+        <div onClick={scrollToHome} className='nav-container'>
+         PM
         </div>
       </div>
-      <HeroSection skillRef={skillRef} eduRef={eduRef} projectRef={projectRef} contactRef={contactRef}></HeroSection>
+      <HeroSection homeRef={homeRef} skillRef={skillRef} eduRef={eduRef} projectRef={projectRef} contactRef={contactRef}></HeroSection>
       <div ref={skillRef}>
         <SkillSet></SkillSet>
       </div>
