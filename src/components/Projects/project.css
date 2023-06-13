@@ -107,10 +107,10 @@
     }
     
     .div1 { 
-        grid-area: 2 / 1 / 4 / 2;
-        align-self: center;
-        position: relative;
-        z-index: 0;
+      grid-area: 2 / 1 / 4 / 2;
+      align-self: auto;
+      position: relative;
+      z-index: 0;
     }
     .div2 { 
         grid-area: 2 / 2 / 3 / 4; 
@@ -238,6 +238,10 @@
           padding: 20px;
         }
 
+        #repo:hover {
+          display: none;
+        }
+
         .title-projects {
           font-size: medium;
         }
@@ -273,6 +277,8 @@
       
         .proj-txt-hover {
           font-size: small;
+        
+          visibility: hidden;
         }
       
         #built-with {
