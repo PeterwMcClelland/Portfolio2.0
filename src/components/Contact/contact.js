@@ -33,8 +33,7 @@ function Contact() {
           <p className='p-text'>
           Thank you for taking the time to explore my portfolio. If you have any 
           projects or opportunities that you believe could benefit 
-          from my skills in web development, or simply 
-          want to discuss the the digital world, 
+          from my skills in web development, or simply want to discuss ideas, 
           I'd love to connect. I am always excited about the 
           possibility of collaborative work, problem-solving, 
           and making a impact through web development.
