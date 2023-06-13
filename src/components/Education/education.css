@@ -23,3 +23,11 @@
     display: inline-flexbox;
     position: relative;
   }
+
+ @media (max-width: 600px) {
+  
+  #education {
+    padding: 30px;
+  }
+
+ }

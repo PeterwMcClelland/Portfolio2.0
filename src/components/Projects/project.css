@@ -237,14 +237,23 @@
         .projects-container {
           padding: 20px;
         }
+
+        .title-projects {
+          font-size: medium;
+        }
+
+        .projects-h1 {
+          font-size: medium;
+        }
       
         .parent {
           grid-template-columns: 1fr;
-          grid-template-rows: repeat(6, 1fr);
+          grid-template-rows: repeat(4, 1fr);
         }
       
         .div1 { 
           grid-area: 1 / 1 / 2 / 2;
+
         }
       
         .div2 { 
