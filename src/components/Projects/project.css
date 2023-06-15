@@ -64,7 +64,7 @@
     }
 
     .p3-img {
-        background-image: url(../../assets/Images/il_fullxfull.2889660441_fkyo.webp);
+        background-image: url(../../assets/Images/50384.jpg);
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -75,6 +75,10 @@
         position: relative;
         position: relative; 
         overflow: hidden;
+    }
+
+    #proj-txt-hover-div4 {
+      font-size: large;
     }
 
     .p1-img::after, .p2-img::after, .p3-img::after {

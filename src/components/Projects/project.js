@@ -71,20 +71,21 @@ function Project() {
         </div>
 
           <div className={`div4 ${animation ? 'slideFromRight' : ''}`}>
-          <a href="https://github.com/PeterwMcClelland/Wine-List" target="_blank" rel="noopener noreferrer">
+          <a href="https://coffee-rolodex.herokuapp.com/Coffee-List" target="_blank" rel="noopener noreferrer">
             <div className='p3-img'>
               <div className='proj-txt-hover'>
-                <div>Wine Index For Service Industry Workers</div>
+                <div id='proj-txt-hover-div4'>A program to store coffee information using
+                   REST API with CRUD operations.</div>
                   <p id='built-with'>
                     Built with: Mongodb, Express, React, Node.js, JavaScript, HTML & CSS. (In Development)
                     <span id='repo' className='proj-txt-hover'>
-                      <a href="https://github.com/PeterwMcClelland/Wine-List" target="_blank" rel="noopener noreferrer">
+                      <a href="https://github.com/PeterwMcClelland/Coffee-Rolodex" target="_blank" rel="noopener noreferrer">
                         Repository
                       </a>
                     </span>
                   </p>
               </div>
-            <p className='proj-title'>Wine Index</p>
+            <p className='proj-title'>Coffee Rolodex</p>
           </div>
           </a>
 
