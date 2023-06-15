@@ -77,7 +77,7 @@ function Project() {
                 <div id='proj-txt-hover-div4'>A program to store coffee information using
                    REST API with CRUD operations.</div>
                   <p id='built-with'>
-                    Built with: Mongodb, Express, React, Node.js, JavaScript, HTML & CSS. (In Development)
+                    Built with: Mongodb, Express, React, Node.js, JavaScript, HTML & CSS.
                     <span id='repo' className='proj-txt-hover'>
                       <a href="https://github.com/PeterwMcClelland/Coffee-Rolodex" target="_blank" rel="noopener noreferrer">
                         Repository
