@@ -35,7 +35,7 @@
     }
 
 .p1-img {
-        background-image:  url(../../assets/Images/background.png), linear-gradient(80deg, #000, rgba(0, 0, 0, 0.8) 59%, transparent) ;
+        background-image:  url(../../assets/Images/50384.jpg), linear-gradient(80deg, #000, rgba(0, 0, 0, 0.8) 59%, transparent) ;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -50,7 +50,7 @@
     }
 
 .p2-img {
-        background-image: url(../../assets/Images/04599f12-2df1-4cb9-aac1-89c78ab0718c.webp);
+        background-image: url(../../assets/Images/background.png);
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -64,7 +64,7 @@
     }
 
     .p3-img {
-        background-image: url(../../assets/Images/50384.jpg);
+        background-image: url(../../assets/Images/04599f12-2df1-4cb9-aac1-89c78ab0718c.webp);
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -77,7 +77,7 @@
         overflow: hidden;
     }
 
-    #proj-txt-hover-div4 {
+    #proj-txt-hover-div2 {
       font-size: large;
     }
 
