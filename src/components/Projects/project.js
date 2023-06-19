@@ -42,7 +42,7 @@ function Project() {
                   <p id='built-with' >
                   Built with: Mongodb, Express, React, Node.js, JavaScript, HTML & CSS.
                     <span id='repo' className='proj-txt-hover'>
-                      <a href="https://github.com/PeterwMcClelland/Coffee-Rolodex" target="_blank" rel="noopener noreferrer">Repository</a>
+                      <a href="https://github.com/PeterwMcClelland/coffee-rolodex-sample" target="_blank" rel="noopener noreferrer">Repository</a>
                     </span>
                   </p>
               </div>
