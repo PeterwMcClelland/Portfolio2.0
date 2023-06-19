@@ -34,7 +34,7 @@ function Project() {
           
           </div>
           <div className={`div2 ${animation ? 'slideFromRight' : ''}`}>
-          <a href="https://coffee-rolodex.herokuapp.com/Coffee-List" target="_blank" rel="noopener noreferrer">
+          <a href="https://coffee-rolodex-sample-557eeaac3267.herokuapp.com/coffees" target="_blank" rel="noopener noreferrer">
             <div className='p1-img'>
               <div className='proj-txt-hover'>
                 <div id='proj-txt-hover-div2'>A program to store coffee information using
