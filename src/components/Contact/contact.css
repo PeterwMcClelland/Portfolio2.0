@@ -26,7 +26,7 @@
 .contact-icons {
   text-decoration: none;
   margin: 0;
-  padding: 15px;
+  padding: 15px 15px 30px 15px;
   gap: 10%;
   display: flex;
   justify-content: center;
@@ -41,11 +41,14 @@
   color: rgb(255, 255, 255);
   text-decoration: none;
   transition: .3s;
+  
 }
 
 .contact-gitIcon:hover {
   font-size: x-large;
   transition: .3s;
+  margin: 0;
+  padding: 0;
 }
 
 .contact-envolope {
