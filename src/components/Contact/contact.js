@@ -2,12 +2,13 @@ import React, { useState } from 'react'
 import '../Contact/contact.css';
 import ScrollTrigger from 'react-scroll-trigger';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 
 const gitIcon = <FontAwesomeIcon icon={faGithub} size='3x' />;
 const Envelope = <FontAwesomeIcon icon={faEnvelope} size='3x' />
+const linkedin = <FontAwesomeIcon icon={faLinkedin} size='3x' />
 
 function Contact() {
 
@@ -48,6 +49,11 @@ function Contact() {
             <div className='contact-gitIcon'>
               {gitIcon}
             </div>
+            </a>
+            <a href="https://www.linkedin.com/in/peterwmcclelland/" target="_blank" rel="noopener noreferrer">
+              <div className='contact-envolope'>
+               {linkedin}
+              </div>
             </a>
             <a href="mailto:peterwmcclelland@gmail.com">
               <div className='contact-envolope'>
