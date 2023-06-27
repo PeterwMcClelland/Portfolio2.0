@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: var(--background-color);
+  background-color: white;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -43,9 +43,9 @@
 
 
 :root {
-  --text-color: ivory;
-  --background-color: #000000;
-  --accent-color: #0041C7;
+  --text-color: rgb(33, 33, 33);
+  --background-color: #ffffff;
+  --accent-color: #216bff;
   --link-color: #258f28;
 }
 
@@ -71,7 +71,7 @@
   position: sticky;
   z-index: 9999;
   top: 0px;
-  background-image: linear-gradient(180deg, #000, rgba(0, 0, 0, 0.8) 59%, transparent);
+  background-image: linear-gradient(180deg, #737373, rgb(255 255 255) 59%, transparent);
 }
 
 .nav-container {
