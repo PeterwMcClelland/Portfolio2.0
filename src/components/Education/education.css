@@ -1,31 +1,36 @@
 @keyframes slideInFromLeft {
-    from { transform: translateX(-100%); opacity: 0; }
-    to   { transform: translateX(0); opacity: 1; }
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
   }
-
-  .slideInFromLeft-h1 {
-    animation: slideInFromLeft 1s forwards;
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
+}
 
-  .slideInFromLeft-edu {
-    animation: slideInFromLeft 2s forwards;
-  }
+.slideInFromLeft-h1 {
+  animation: slideInFromLeft 1s forwards;
+}
 
-  .slideInFromLeft-res {
-    animation: slideInFromLeft 1.5s forwards;
-  }
+.slideInFromLeft-edu {
+  animation: slideInFromLeft 2s forwards;
+}
 
-  #education {
-    padding: 100px 30px 30px 30px;
-  }
+.slideInFromLeft-res {
+  animation: slideInFromLeft 1.5s forwards;
+}
 
-  .resume {
-    display: inline-flexbox;
-    position: relative;
-  }
+#education {
+  padding: 100px 30px 30px 30px;
+}
 
- @media (max-width: 600px) {
-  
+.resume {
+  display: inline-flexbox;
+  position: relative;
+}
+
+@media (max-width: 600px) {
   #education {
     padding: 30px;
   }
@@ -33,5 +38,4 @@
   #dot {
     font-size: 35px;
   }
-
- }
+}

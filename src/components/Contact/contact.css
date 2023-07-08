@@ -4,21 +4,21 @@
 }
 
 .contact-title {
-    font-size: xx-large;
-  font-family: 'Jost', sans-serif;
+  font-size: xx-large;
+  font-family: "Jost", sans-serif;
   color: var(--accent-color);
 }
 
 .education-h1 {
-    font-family: 'Jost', sans-serif;
-    color: white;
-    font-size: xxx-large;
-    margin: 0;
+  font-family: "Jost", sans-serif;
+  color: white;
+  font-size: xxx-large;
+  margin: 0;
 }
 
 .icon-header {
   /* font-size: xx-large; */
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   color: white;
   margin: 0;
 }
@@ -33,20 +33,18 @@
 }
 
 .contact-icons:hover {
-
   color: var(--accent-color);
 }
 
 .contact-gitIcon {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  transition: .3s;
-  
+  transition: 0.3s;
 }
 
 .contact-gitIcon:hover {
   font-size: x-large;
-  transition: .3s;
+  transition: 0.3s;
   margin: 0;
   padding: 0;
 }
@@ -54,27 +52,27 @@
 .contact-envolope {
   color: white;
   text-decoration: none;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .contact-envolope:hover {
   font-size: x-large;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .contact-phone {
   color: white;
   text-decoration: none;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: x-large;
   align-self: center;
-  transition: .3s;
+  transition: 0.3s;
   cursor: pointer;
 }
 
 .contact-phone:hover {
   font-size: xx-large;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .liftIntoPlace-contact {
@@ -82,12 +80,16 @@
   display: flow-root;
 }
 
-
 @keyframes liftIntoPlace-contact {
-  from { transform: translateY(100vh); opacity: 0; }
-  to   { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
-
 
 @media (max-width: 600px) {
   .education-section {

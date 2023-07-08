@@ -40,26 +40,21 @@
   }
 }
 
-
-
 :root {
   --text-color: ivory;
   --background-color: #000000;
-  --accent-color: #0041C7;
+  --accent-color: #0041c7;
   --link-color: #258f28;
 }
 
-
-
 /* Google Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis');
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 /* Hero Section */
 
@@ -71,16 +66,21 @@
   position: sticky;
   z-index: 9999;
   top: 0px;
-  background-image: linear-gradient(180deg, #000, rgba(0, 0, 0, 0.8) 59%, transparent);
+  background-image: linear-gradient(
+    180deg,
+    #000,
+    rgba(0, 0, 0, 0.8) 59%,
+    transparent
+  );
 }
 
 .nav-container {
   color: var(--text-color);
   font-size: xx-large;
-  border-right: solid ;
-  border-bottom: solid ;
+  border-right: solid;
+  border-bottom: solid;
   width: fit-content;
-  font-family: 'Climate Crisis';
+  font-family: "Climate Crisis";
   padding-right: 5px;
   cursor: pointer;
 }
@@ -98,13 +98,25 @@
 }
 
 @keyframes nameFromLeft {
-  0% { transform: translateX(-100%); opacity: 0; }
-  100% { transform: translateX(0); opacity: 1; }
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @keyframes nameFromRight {
-  0% { transform: translateX(100%); opacity: 0; }
-  100% { transform: translateX(0); opacity: 1; }
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 #dot {
@@ -127,8 +139,14 @@
 }
 
 @keyframes dotFall {
-  from { transform: translateY(-100vh); opacity: 0; }
-  to   { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .main-section {
@@ -149,16 +167,15 @@
 }
 
 .columns > * {
-padding: 0;
+  padding: 0;
 }
 /**/
 
 .hero-text {
   font-size: xx-large;
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   text-align: start;
   color: var(--text-color);
-  
 }
 
 .hero-img {
@@ -166,18 +183,17 @@ padding: 0;
   background-size: 80%;
   background-position: center;
   border-radius: 15px;
-  animation: fadeIn 8s; 
+  animation: fadeIn 8s;
   background-repeat: no-repeat;
   border-radius: 15px;
-  
 }
 
 .p-text {
   font-size: large;
   color: #a5a5a5;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   align-self: center;
-  animation: fadeIn 5s; 
+  animation: fadeIn 5s;
   border-left: solid 2px var(--accent-color);
   padding-left: 10px;
 }
@@ -185,15 +201,14 @@ padding: 0;
 .scroll-more {
   border-bottom: solid var(--accent-color);
   color: var(--text-color);
-  transition: .3s;
+  transition: 0.3s;
   padding-top: 15px;
   padding-right: 15px;
-  
 }
 
 .scroll-more:hover {
   padding-top: 3px;
-  transition: .3s;
+  transition: 0.3s;
   border-bottom: solid var(--link-color);
   color: var(--link-color);
   cursor: pointer;
@@ -202,12 +217,11 @@ padding: 0;
 .scroll-nav {
   display: flex;
   font-size: xx-large;
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   text-align: start;
   justify-content: center;
   padding-bottom: 10%;
 }
-
 
 /* SkillSet */
 
@@ -221,18 +235,17 @@ padding: 0;
   position: relative;
   border-right: solid 2px var(--accent-color);
   font-size: xx-large;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   text-align: start;
   color: var(--text-color);
   height: 500px;
 }
 
-
 /* Education */
 
 .education-text {
   font-size: xx-large;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   text-align: start;
   color: var(--accent-color);
   inline-size: fit-content;
@@ -240,7 +253,7 @@ padding: 0;
 
 .resume-link {
   font-size: xx-large;
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   text-align: start;
   color: var(--text-color);
   padding-top: 5%;
@@ -249,21 +262,20 @@ padding: 0;
 
 .resume-link:hover {
   cursor: pointer;
-  
 }
 
 .hyper-link {
   text-decoration: none;
   color: var(--text-color);
   font-size: xx-large;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   text-align: start;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .hyper-link:hover {
   color: var(--link-color);
-  transition: .3s;
+  transition: 0.3s;
   padding-left: 10px;
 }
 
@@ -271,11 +283,13 @@ padding: 0;
   display: inline-flexbox;
 }
 
-
-
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Mobile Friendly */
@@ -321,8 +335,6 @@ padding: 0;
     display: none;
   }
 
-
-
   .last,
   .first {
     text-align-last: start;
@@ -331,9 +343,7 @@ padding: 0;
   .nav {
     padding-left: 15px;
   }
-
 }
-
 
 @media screen and (max-width: 425px) {
   .nav {
@@ -353,10 +363,10 @@ padding: 0;
     font-size: x-large;
   }
 
-  .hero-text, 
-  .scroll-more, 
-  .education-text, 
-  .resume-link, 
+  .hero-text,
+  .scroll-more,
+  .education-text,
+  .resume-link,
   .hyper-link {
     font-size: large;
   }
@@ -365,6 +375,3 @@ padding: 0;
     padding-left: 15px;
   }
 }
-
-
-
