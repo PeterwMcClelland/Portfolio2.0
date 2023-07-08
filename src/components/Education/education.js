@@ -33,7 +33,7 @@ function Education() {
             
             </div>
             <div className='p-text'>
-            I recently graduated from UT Austin’s coding bootcamp program. 
+            I graduated from UT Austin’s coding bootcamp program. 
             Through this program I have learned HTML5, CSS, Javascript, 
              Express, MongoDB and React. Previously I worked in the 
             coffee industry for the past 10 years. This has given me great 

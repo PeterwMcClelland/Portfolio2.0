@@ -78,7 +78,7 @@
 }
 
 .liftIntoPlace-contact {
-  animation: liftIntoPlace-contact 2s forwards;
+  animation: liftIntoPlace-contact 1.25s forwards;
   display: flow-root;
 }
 
