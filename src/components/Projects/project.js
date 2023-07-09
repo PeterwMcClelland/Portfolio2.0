@@ -93,7 +93,7 @@ function Project() {
                     </span>
                   </p>
                 </div>
-                <p className="proj-title">This Weekend</p>
+                <p className="proj-title">Pin It</p>
               </div>
             </a>
           </div>
