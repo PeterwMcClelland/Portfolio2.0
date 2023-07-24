@@ -89,12 +89,14 @@
   margin: 0;
   animation: nameFromLeft 2s forwards;
   color: var(--h1-color);
+  text-shadow: -4px 4px 4px rgb(77, 94, 120);
 }
 
 .last {
   margin: 0px;
   animation: nameFromRight 2s forwards;
   color: var(--h1-color);
+  text-shadow: -4px 4px 4px rgb(77, 94, 120);
 }
 
 @keyframes nameFromLeft {
@@ -122,10 +124,12 @@
 #dot {
   top: 0;
   text-decoration: none;
-  color: #258f28;
+  color: rgb(37, 143, 40);
+  text-shadow: none;
   font-size: 75px;
   font-family: initial;
   display: inline-block;
+  
 }
 
 .dot {
@@ -136,6 +140,8 @@
   font-family: initial;
   display: inline-block;
   animation: dotFall 2s forwards;
+  text-shadow: none;
+  
 }
 
 @keyframes dotFall {
@@ -169,6 +175,7 @@
 .columns > * {
   padding: 0;
 }
+
 /**/
 
 .hero-text {
@@ -212,6 +219,7 @@
   border-bottom: solid var(--link-color);
   color: var(--link-color);
   cursor: pointer;
+  
 }
 
 .scroll-nav {
@@ -221,6 +229,7 @@
   text-align: start;
   justify-content: center;
   padding-bottom: 10%;
+  /* text-shadow: -4px 4px 4px rgb(77, 94, 120); */
 }
 
 /* SkillSet */
@@ -271,12 +280,14 @@
   font-family: "Jost", sans-serif;
   text-align: start;
   transition: 0.5s;
+  text-shadow: -4px 4px 4px rgb(77, 94, 120);
 }
 
 .hyper-link:hover {
   color: var(--link-color);
   transition: 0.3s;
   padding-left: 10px;
+  text-shadow: none;
 }
 
 .resume {

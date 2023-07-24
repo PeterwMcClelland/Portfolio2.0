@@ -7,6 +7,7 @@
   font-size: xx-large;
   font-family: "Jost", sans-serif;
   color: var(--accent-color);
+  
 }
 
 .education-h1 {
@@ -14,6 +15,7 @@
   color: white;
   font-size: xxx-large;
   margin: 0;
+  text-shadow: -4px 4px 4px rgb(77, 94, 120);
 }
 
 .icon-header {
@@ -21,6 +23,7 @@
   font-family: "Jost", sans-serif;
   color: white;
   margin: 0;
+  text-shadow: -3px 3px 3px rgb(77, 94, 120);
 }
 
 .contact-icons {
