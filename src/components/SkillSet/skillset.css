@@ -9,7 +9,6 @@
   text-align: center;
   color: var(--text-color);
   padding: 15px;
-  text-shadow: -4px 4px 4px rgb(77, 94, 120);
 }
 
 .slideInFromLeft {
