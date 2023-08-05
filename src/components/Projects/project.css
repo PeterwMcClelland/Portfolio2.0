@@ -3,7 +3,6 @@
   font-size: x-large;
   border-bottom: solid var(--accent-color);
   inline-size: fit-content;
-
 }
 
 .projects-container {
@@ -120,9 +119,8 @@
   align-self: auto;
   position: relative;
   z-index: 0;
- 
-
 }
+
 .div2 {
   grid-area: 2 / 2 / 3 / 4;
   height: 200px;
@@ -156,7 +154,6 @@
   justify-content: start;
   transition: 0.3s;
   padding: 5px;
-  
 }
 
 .a-github {
