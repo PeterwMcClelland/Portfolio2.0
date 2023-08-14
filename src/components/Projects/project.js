@@ -100,18 +100,18 @@ function Project() {
 
           <div className={`div4 ${animation ? "slideFromRight" : ""}`}>
             <a
-              href="https://newport-house.herokuapp.com/"
+              href="https://miso-presents-7126a5ab349e.herokuapp.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <div className="p3-img">
                 <div className="proj-txt-hover">
-                  <div>Private Beach House Rental</div>
+                  <div>Concert Promotion Company</div>
                   <p id="built-with">
-                    Built with: React, HTML, CSS, JavaScript, EmailJS & Heroku.
+                    Built with: React, HTML, JavaScript CSS & Sass.
                     <span id="repo" className="proj-txt-hover">
                       <a
-                        href="https://github.com/PeterwMcClelland/Beach-House"
+                        href="https://github.com/PeterwMcClelland/Miso"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -120,7 +120,7 @@ function Project() {
                     </span>
                   </p>
                 </div>
-                <p className="proj-title">Newport House</p>
+                <p className="proj-title">Miso Presents</p>
               </div>
             </a>
           </div>
