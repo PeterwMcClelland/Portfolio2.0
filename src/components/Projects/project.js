@@ -4,10 +4,8 @@ import "../Projects/project.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-// import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 const gitIcon = <FontAwesomeIcon icon={faGithub} />;
-// const linkIcon = <FontAwesomeIcon size='xs' icon={faLink} />
 
 function Project() {
   const [animation, setAnimation] = useState(false);
