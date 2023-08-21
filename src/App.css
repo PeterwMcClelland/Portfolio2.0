@@ -55,6 +55,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Knewave&display=swap"); /* font-family: 'Knewave', cursive; */
 
 /* Hero Section */
 
@@ -126,7 +127,6 @@
   font-size: 75px;
   font-family: initial;
   display: inline-block;
-  
 }
 
 .dot {
@@ -137,8 +137,6 @@
   font-family: initial;
   display: inline-block;
   animation: dotFall 2s forwards;
-  
-  
 }
 
 @keyframes dotFall {
@@ -216,7 +214,6 @@
   border-bottom: solid var(--link-color);
   color: var(--link-color);
   cursor: pointer;
-  
 }
 
 .scroll-nav {
@@ -282,7 +279,6 @@
   color: var(--link-color);
   transition: 0.3s;
   padding-left: 10px;
-  
 }
 
 .resume {
