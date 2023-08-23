@@ -20,8 +20,10 @@ function Project() {
         className={`projects-container ${animation ? "slideFromRight" : ""}`}
       >
         <div className="parent">
+          
           <div className="div1">
-            <p className="title-projects">Work</p> <span className="two"></span>
+            <div className="number-2">2</div>
+             <p className="title-projects">Work</p> <span className="two"></span>
             <h1 className="projects-h1">
               Recent Projects<span id="dot">.</span>
             </h1>

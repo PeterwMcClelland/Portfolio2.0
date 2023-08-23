@@ -30,6 +30,16 @@
   position: relative;
 }
 
+.number-3 {
+  padding: 0;
+  position: absolute;
+  padding-top: -29px;
+  color: rgba(57, 57, 57, 0.5);
+  padding-left: 300px;
+  font-family: 'Knewave', cursive;
+  font-size: 12rem;
+}
+
 @media (max-width: 600px) {
   #education {
     padding: 30px;

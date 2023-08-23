@@ -15,6 +15,17 @@
   animation: slideInFromLeft 1.5s forwards;
 }
 
+.number-1 {
+  padding: 0;
+  position: absolute;
+  padding-left: 340px;
+  color: rgba(57, 57, 57, 0.7);
+  text-align: end;
+  z-index: -1;
+  font-size: 12rem;
+  font-family: 'Knewave', cursive;
+}
+
 /* Icons */
 
 .icon-container {

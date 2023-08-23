@@ -18,6 +18,17 @@
   text-align: center;
 }
 
+.number-2 {
+  padding: 0;
+  position: absolute;
+  padding-top: -29px;
+  color: rgba(57, 57, 57, 0.7);
+  padding-left: 10px;
+  z-index: -1;
+  font-size: 10rem;
+  font-family: 'Knewave', cursive;
+}
+
 .parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

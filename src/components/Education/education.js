@@ -21,6 +21,7 @@ function Education() {
       <ScrollTrigger onEnter={onEnterViewport}>
         <div id="education" className="columns">
           <div className="resume">
+            <div className="number-3">3</div>
             <div
               className={`education-text ${
                 animation ? "slideInFromLeft-h1" : ""

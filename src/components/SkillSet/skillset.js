@@ -23,7 +23,9 @@ function Skillset() {
       <ScrollTrigger onEnter={onEnterViewport}>
         <div id="skills-columns" className="columns">
           <div className={`skill-text ${animation ? "fallIntoPlace" : ""}`}>
+          <div className="number-1">1</div>
             <p className="my-skillset">My Skillset</p>
+            
             <h2
               className={`skill-animation ${
                 animation ? "slideInFromLeft" : ""

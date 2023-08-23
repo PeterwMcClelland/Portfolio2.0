@@ -9,6 +9,18 @@
   color: var(--accent-color);
 }
 
+.number-4 {
+  padding: 0;
+  position: absolute;
+  padding-top: -29px;
+  color: rgba(57, 57, 57, 0.5);
+  padding-left: 10px;
+  z-index: -1;
+  display: inline-block;
+  font-size: 12rem;
+  font-family: 'Knewave', cursive;
+}
+
 .education-h1 {
   font-family: "Jost", sans-serif;
   color: white;
