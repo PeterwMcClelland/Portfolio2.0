@@ -68,12 +68,18 @@
   position: sticky;
   z-index: 9999;
   top: 0px;
+  transition: .3s ;
   background-image: linear-gradient(
     180deg,
     #000,
     rgba(0, 0, 0, 0.8) 59%,
     transparent
   );
+}
+
+.nav-hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
 }
 
 .nav-container {

@@ -4,7 +4,7 @@ import SkillSet from "./components/SkillSet/skillset";
 import Education from "./components/Education/education";
 import Project from "./components/Projects/project";
 import Contact from "./components/Contact/contact";
-import { useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 function App() {
   const skillRef = useRef();
@@ -13,13 +13,36 @@ function App() {
   const contactRef = useRef();
   const homeRef = useRef();
 
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [showNav, setShowNav] = useState(true);
+
   const scrollToHome = () => {
     homeRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY) {
+        // Scrolling down
+        setShowNav(false);
+      } else {
+        // Scrolling up
+        setShowNav(true);
+      }
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
     <div ref={homeRef} className="App">
-      <div className="nav">
+      <div className={`nav ${showNav ? '' : 'nav-hidden'}`}>
         <div onClick={scrollToHome} className="nav-container">
           PM
         </div>
