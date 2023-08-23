@@ -20,7 +20,6 @@ function Contact() {
     <div className="education-section">
       <ScrollTrigger onEnter={onEnterViewport}>
         <div className={`icons ${animation ? "liftIntoPlace-contact" : ""}`}>
-          <div className="number-4">4</div>
           <div className="contact-title">What Now?</div>
 
           <h1 className="education-h1">

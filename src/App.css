@@ -99,16 +99,7 @@
   color: var(--h1-color);
 }
 
-.numbers {
-  padding: 0;
-  position: absolute;
-  padding-top: -29px;
-  color: rgba(57, 57, 57, 0.7);
-  padding-left: 10px;
-  z-index: -1;
-  font-size: 12rem;
-  font-family: 'Knewave', cursive;
-}
+
 
 @keyframes nameFromLeft {
   0% {
@@ -218,6 +209,7 @@
   transition: 0.3s;
   padding-top: 15px;
   padding-right: 15px;
+  font-family: 'Knewave', cursive;
 }
 
 .scroll-more:hover {
@@ -225,7 +217,9 @@
   transition: 0.3s;
   border-bottom: solid var(--link-color);
   color: var(--link-color);
+  
   cursor: pointer;
+  font-family: 'Knewave', cursive;
 }
 
 .scroll-nav {
@@ -240,9 +234,11 @@
 /* SkillSet */
 
 .my-skillset {
-  color: var(--accent-color);
-  font-size: xx-large;
   inline-size: fit-content;
+  color: rgba(5, 106, 201, 0.9);
+  z-index: -1;
+  font-size: 3rem;
+  font-family: 'Knewave', cursive;
 }
 
 .skill-text {
@@ -258,11 +254,11 @@
 /* Education */
 
 .education-text {
-  font-size: xx-large;
-  font-family: "Jost", sans-serif;
   text-align: start;
-  color: var(--accent-color);
   inline-size: fit-content;
+  color: rgba(5, 106, 201, 0.9);
+  font-family: "Knewave", cursive;
+  font-size: 3rem;
 }
 
 .resume-link {

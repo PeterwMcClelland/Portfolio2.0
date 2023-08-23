@@ -4,21 +4,13 @@
 }
 
 .contact-title {
-  font-size: xx-large;
-  font-family: "Jost", sans-serif;
-  color: var(--accent-color);
-}
-
-.number-4 {
   padding: 0;
-  position: absolute;
+  position: inherit;
   padding-top: -29px;
-  color: rgba(57, 57, 57, 0.5);
-  padding-left: 10px;
-  z-index: -1;
-  display: inline-block;
-  font-size: 12rem;
-  font-family: 'Knewave', cursive;
+  color: rgba(5, 106, 201, 0.9);
+
+  font-size: 3rem;
+  font-family: "Knewave", cursive;
 }
 
 .education-h1 {

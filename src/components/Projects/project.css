@@ -16,17 +16,7 @@
 
 .projects-h1 {
   text-align: center;
-}
-
-.number-2 {
-  padding: 0;
-  position: absolute;
-  padding-top: -29px;
-  color: rgba(57, 57, 57, 0.7);
-  padding-left: 10px;
-  z-index: -1;
-  font-size: 10rem;
-  font-family: 'Knewave', cursive;
+  
 }
 
 .parent {
@@ -40,9 +30,12 @@
 
 .title-projects {
   color: var(--accent-color);
-  font-size: xx-large;
   inline-size: fit-content;
   text-align: start;
+  color: rgba(5, 106, 201, 0.9);
+  margin: 0;
+  font-size: 3rem;
+  font-family: 'Knewave', cursive;
 }
 
 .p1-img {
