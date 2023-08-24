@@ -82,6 +82,7 @@
 .liftIntoPlace-contact {
   animation: liftIntoPlace-contact 1.25s forwards;
   display: flow-root;
+  padding: 40px 30px 30px 30px;
 }
 
 @keyframes liftIntoPlace-contact {
