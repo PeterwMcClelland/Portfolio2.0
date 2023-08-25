@@ -68,7 +68,7 @@
   position: sticky;
   z-index: 9999;
   top: 0px;
-  transition: .3s ;
+  transition: .6s ;
   background-image: linear-gradient(
     180deg,
     #000,
