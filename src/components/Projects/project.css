@@ -16,7 +16,6 @@
 
 .projects-h1 {
   text-align: center;
-  
 }
 
 .parent {
@@ -35,7 +34,7 @@
   color: rgba(5, 106, 201, 0.9);
   margin: 0;
   font-size: 3rem;
-  font-family: 'Knewave', cursive;
+  font-family: "Knewave", cursive;
 }
 
 .p1-img {

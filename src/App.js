@@ -34,15 +34,15 @@ function App() {
       setLastScrollY(currentScrollY);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [lastScrollY]);
 
   return (
     <div ref={homeRef} className="App">
-      <div className={`nav ${showNav ? '' : 'nav-hidden'}`}>
+      <div className={`nav ${showNav ? "" : "nav-hidden"}`}>
         <div onClick={scrollToHome} className="nav-container">
           PM
         </div>

@@ -68,7 +68,7 @@
   position: sticky;
   z-index: 9999;
   top: 0px;
-  transition: .6s ;
+  transition: 0.6s;
   background-image: linear-gradient(
     180deg,
     #000,
@@ -104,8 +104,6 @@
   animation: nameFromRight 2s forwards;
   color: var(--h1-color);
 }
-
-
 
 @keyframes nameFromLeft {
   0% {
@@ -215,7 +213,7 @@
   transition: 0.3s;
   padding-top: 15px;
   padding-right: 15px;
-  font-family: 'Knewave', cursive;
+  font-family: "Knewave", cursive;
 }
 
 .scroll-more:hover {
@@ -223,9 +221,9 @@
   transition: 0.3s;
   border-bottom: solid var(--link-color);
   color: var(--link-color);
-  
+
   cursor: pointer;
-  font-family: 'Knewave', cursive;
+  font-family: "Knewave", cursive;
 }
 
 .scroll-nav {
@@ -244,7 +242,7 @@
   color: rgba(5, 106, 201, 0.9);
   z-index: -1;
   font-size: 3rem;
-  font-family: 'Knewave', cursive;
+  font-family: "Knewave", cursive;
 }
 
 .skill-text {
