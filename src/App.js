@@ -25,10 +25,8 @@ function App() {
       const currentScrollY = window.scrollY;
 
       if (currentScrollY > lastScrollY) {
-        // Scrolling down
         setShowNav(false);
       } else {
-        // Scrolling up
         setShowNav(true);
       }
       setLastScrollY(currentScrollY);
