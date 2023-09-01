@@ -9,20 +9,31 @@
   }
 }
 
+%slideInFromLeft-animation {
+  animation: slideInFromLeft forwards;
+}
+
 .slideInFromLeft-h1 {
-  animation: slideInFromLeft 1s forwards;
+  @extend %slideInFromLeft-animation;
+  animation-duration: 1s;
 }
 
 .slideInFromLeft-edu {
-  animation: slideInFromLeft 2s forwards;
+  @extend %slideInFromLeft-animation;
+  animation-duration: 2s;
 }
 
 .slideInFromLeft-res {
-  animation: slideInFromLeft 1.5s forwards;
+  @extend %slideInFromLeft-animation;
+  animation-duration: 1.5s;
 }
 
 #education {
   padding: 140px 30px 30px 30px;
+
+  @media (max-width: 600px) {
+    padding: 30px;
+  }
 }
 
 .resume {
@@ -31,10 +42,6 @@
 }
 
 @media (max-width: 600px) {
-  #education {
-    padding: 30px;
-  }
-
   #dot {
     font-size: 35px;
   }

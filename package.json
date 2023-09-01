@@ -19,6 +19,8 @@
     "react-lorem-ipsum": "^1.4.10",
     "react-scripts": "5.0.1",
     "react-scroll-trigger": "^0.6.14",
+    "scss": "^0.2.4",
+    "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -44,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "sass": "^1.66.1"
   }
 }

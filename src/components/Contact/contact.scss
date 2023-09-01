@@ -1,0 +1,128 @@
+.education-section {
+  padding: 25px;
+  display: inline-grid;
+
+  @media (max-width: 600px) {
+    padding: 20px;
+  }
+
+  @media (max-width: 425px) {
+    padding: 10px;
+  }
+}
+
+.contact-title {
+  padding: 0;
+  position: inherit;
+  padding-top: -29px;
+  color: rgba(5, 106, 201, 0.9);
+  font-size: 3rem;
+  font-family: "Knewave", cursive;
+
+  @media (max-width: 600px) {
+    font-size: large;
+  }
+
+  @media (max-width: 425px) {
+    font-size: larger;
+  }
+}
+
+.education-h1, 
+.icon-header {
+  font-family: "Jost", sans-serif;
+  color: white;
+  margin: 0;
+
+  @media (max-width: 600px) {
+    font-size: large;
+  }
+
+  @media (max-width: 425px) {
+    font-size: larger;
+  }
+}
+
+.education-h1 {
+  font-size: xxx-large;
+}
+
+// .icon-header {
+//    font-size: xx-large;
+// }
+
+.contact-icons {
+  text-decoration: none;
+  margin: 0;
+  padding: 15px 15px 30px 15px;
+  gap: 10%;
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+    color: var(--accent-color);
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+  }
+}
+
+.contact-gitIcon, 
+.contact-envolope, 
+.contact-phone {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-gitIcon, 
+.contact-envolope {
+  &:hover {
+    font-size: x-large;
+    transition: 0.3s;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.contact-phone {
+  font-family: "Jost", sans-serif;
+  font-size: x-large;
+  align-self: center;
+  cursor: pointer;
+
+  &:hover {
+    font-size: xx-large;
+    transition: 0.3s;
+  }
+
+  @media (max-width: 600px) {
+    font-size: large;
+  }
+
+  @media (max-width: 425px) {
+    font-size: medium;
+  }
+}
+
+.liftIntoPlace-contact {
+  animation: liftIntoPlace-contact 1.25s forwards;
+  display: flow-root;
+  padding: 40px 30px 30px 30px;
+}
+
+@keyframes liftIntoPlace-contact {
+  from {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

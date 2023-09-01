@@ -9,7 +9,7 @@ import { ReactComponent as ExpressJS } from "../../assets/Images/icons8-express-
 import { ReactComponent as NodeJS } from "../../assets/Images/icons8-node-js.svg";
 import { ReactComponent as Heroku } from "../../assets/Images/icons8-heroku.svg";
 
-import "../SkillSet/skillset.css";
+import "../SkillSet/skillset.scss";
 
 function Skillset() {
   const [animation, setAnimation] = useState(false);

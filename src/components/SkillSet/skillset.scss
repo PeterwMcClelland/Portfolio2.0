@@ -1,0 +1,109 @@
+$animation-duration: 1.5s;
+$shake-animation: (
+  "0%, 10%": (translate(0, 0), rotate(0deg)),
+  "22%, 28%": (translate(-1px, -2px), rotate(-1deg)),
+  "30%, 38%": (translate(-3px, 0px), rotate(1deg)),
+  "40%, 48%": (translate(3px, 2px), rotate(0deg)),
+  "50%, 58%": (translate(1px, -1px), rotate(1deg)),
+  "60%, 68%": (translate(-1px, 2px), rotate(-1deg)),
+  "70%, 78%": (translate(-3px, 1px), rotate(0deg)),
+  "80%, 88%": (translate(3px, 1px), rotate(-1deg)),
+  "90%, 100%": (translate(0, 0), rotate(0deg))
+);
+
+.fallIntoPlace {
+  animation-name: fallIntoPlace;
+  animation-duration: $animation-duration;
+  animation-fill-mode: both;
+}
+
+.skill-animation {
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.slideInFromLeft {
+  animation: slideInFromLeft $animation-duration forwards;
+}
+
+/* Icons */
+.icon-container {
+  align-self: center;
+  position: relative;
+  z-index: 0;
+  padding: 15px;
+}
+
+$icons: (
+  CSS: 18.5s,
+  mongodb: 18s,
+  heroku: 16s,
+  js: 14s,
+  express: 19s, // Note: You had two express styles with different timings, this one overwrites the latter
+  react: 19s,
+  node: 16.5s,
+  HTML5: 17s
+);
+
+@each $icon, $time in $icons {
+  ##{$icon} {
+    animation: shake $time infinite;
+  }
+}
+
+@keyframes shake {
+  @each $key, $transformations in $shake-animation {
+    #{$key} {
+      transform: translate(unquote(map-deep-get($transformations, translate))) rotate(unquote(map-deep-get($transformations, rotate)));
+    }
+  }
+}
+
+@keyframes fallIntoPlace {
+  from {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+
+  #dot {
+    font-size: 35px;
+  }
+
+  .my-skillset, .skill-text {
+    font-size: large;
+  }
+
+  .icon-container .icons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .icon-container .icons svg {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
+}

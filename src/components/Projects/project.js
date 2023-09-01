@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ScrollTrigger from "react-scroll-trigger";
-import "../Projects/project.css";
+import "../Projects/project.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";

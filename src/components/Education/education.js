@@ -7,7 +7,7 @@ import ScrollTrigger from "react-scroll-trigger";
 import Resume from "../../assets/PDF/PeterMcClellandCV.pdf";
 import UT from "../../assets/PDF/McClelland_Peter_TCH-5003-052.pdf";
 
-import "../Education/education.css";
+import "../Education/education.scss";
 
 function Education() {
   const [animation, setAnimation] = useState(false);
