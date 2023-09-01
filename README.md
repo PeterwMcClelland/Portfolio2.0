@@ -8,10 +8,10 @@ Clone this repo then In command terminal run: npm start
 
 
 ## Screenshot
-<a href="https://ibb.co/P1gB4y4"><img src="https://i.ibb.co/vLk2mWm/Screenshot-2023-06-09-at-6-16-15-PM.png" alt="Screenshot-2023-06-09-at-6-16-15-PM" border="0"></a>
+[![Screenshot-2023-08-24-at-8-11-25-PM.png](https://i.postimg.cc/D068VCqG/Screenshot-2023-08-24-at-8-11-25-PM.png)](https://postimg.cc/K3KZBDpc)
 
 ## Built With
-HTML, CSS, React, JavaScript, Fontawesome.
+HTML, CSS, SCSS, React, JavaScript, Fontawesome.
 
 ## GitHub & Deployed Site
 https://github.com/PeterwMcClelland/Portfolio2.0
