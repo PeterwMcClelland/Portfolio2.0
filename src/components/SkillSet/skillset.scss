@@ -1,14 +1,41 @@
 $animation-duration: 1.5s;
 $shake-animation: (
-  "0%, 10%": (translate(0, 0), rotate(0deg)),
-  "22%, 28%": (translate(-1px, -2px), rotate(-1deg)),
-  "30%, 38%": (translate(-3px, 0px), rotate(1deg)),
-  "40%, 48%": (translate(3px, 2px), rotate(0deg)),
-  "50%, 58%": (translate(1px, -1px), rotate(1deg)),
-  "60%, 68%": (translate(-1px, 2px), rotate(-1deg)),
-  "70%, 78%": (translate(-3px, 1px), rotate(0deg)),
-  "80%, 88%": (translate(3px, 1px), rotate(-1deg)),
-  "90%, 100%": (translate(0, 0), rotate(0deg))
+  "0%, 10%": (
+    translate(0, 0),
+    rotate(0deg),
+  ),
+  "22%, 28%": (
+    translate(-1px, -2px),
+    rotate(-1deg),
+  ),
+  "30%, 38%": (
+    translate(-3px, 0px),
+    rotate(1deg),
+  ),
+  "40%, 48%": (
+    translate(3px, 2px),
+    rotate(0deg),
+  ),
+  "50%, 58%": (
+    translate(1px, -1px),
+    rotate(1deg),
+  ),
+  "60%, 68%": (
+    translate(-1px, 2px),
+    rotate(-1deg),
+  ),
+  "70%, 78%": (
+    translate(-3px, 1px),
+    rotate(0deg),
+  ),
+  "80%, 88%": (
+    translate(3px, 1px),
+    rotate(-1deg),
+  ),
+  "90%, 100%": (
+    translate(0, 0),
+    rotate(0deg),
+  ),
 );
 
 .fallIntoPlace {
@@ -40,10 +67,10 @@ $icons: (
   mongodb: 18s,
   heroku: 16s,
   js: 14s,
-  express: 19s,
+  express: 19s, // Note: You had two express styles with different timings, this one overwrites the latter
   react: 19s,
   node: 16.5s,
-  HTML5: 17s
+  HTML5: 17s,
 );
 
 @each $icon, $time in $icons {
@@ -55,7 +82,8 @@ $icons: (
 @keyframes shake {
   @each $key, $transformations in $shake-animation {
     #{$key} {
-      transform: translate(unquote(map-deep-get($transformations, translate))) rotate(unquote(map-deep-get($transformations, rotate)));
+      transform: translate(unquote(map-deep-get($transformations, translate)))
+        rotate(unquote(map-deep-get($transformations, rotate)));
     }
   }
 }
@@ -91,7 +119,8 @@ $icons: (
     font-size: 35px;
   }
 
-  .my-skillset, .skill-text {
+  .my-skillset,
+  .skill-text {
     font-size: large;
   }
 

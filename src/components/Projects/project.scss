@@ -55,10 +55,12 @@ $hover-bg: rgba(10, 8, 8, 0.7);
 
 .p1-img {
   @extend %img-properties;
-  background-image: url(../../assets/Images/50384.jpg), linear-gradient(80deg, #000, rgba(0, 0, 0, 0.8) 59%, transparent);
+  background-image: url(../../assets/Images/50384.jpg),
+    linear-gradient(80deg, #000, rgba(0, 0, 0, 0.8) 59%, transparent);
 }
 
-.p2-img, .p3-img {
+.p2-img,
+.p3-img {
   @extend %img-properties;
 }
 
@@ -74,7 +76,9 @@ $hover-bg: rgba(10, 8, 8, 0.7);
   font-size: large;
 }
 
-.p1-img::after, .p2-img::after, .p3-img::after {
+.p1-img::after,
+.p2-img::after,
+.p3-img::after {
   content: "";
   position: absolute;
   top: 0;
@@ -85,7 +89,9 @@ $hover-bg: rgba(10, 8, 8, 0.7);
   pointer-events: none;
 }
 
-.p1-img::before, .p2-img::before, .p3-img::before {
+.p1-img::before,
+.p2-img::before,
+.p3-img::before {
   content: "";
   position: absolute;
   top: 0;
@@ -97,7 +103,9 @@ $hover-bg: rgba(10, 8, 8, 0.7);
   pointer-events: none;
 }
 
-.p1-img:hover::before, .p2-img:hover::before, .p3-img:hover::before {
+.p1-img:hover::before,
+.p2-img:hover::before,
+.p3-img:hover::before {
   background: $hover-bg;
 }
 
@@ -112,7 +120,9 @@ $hover-bg: rgba(10, 8, 8, 0.7);
   grid-area: 2 / 1 / 4 / 2;
 }
 
-.div2, .div3, .div4 {
+.div2,
+.div3,
+.div4 {
   @extend %div-properties;
 }
 
@@ -189,11 +199,14 @@ $hover-bg: rgba(10, 8, 8, 0.7);
   border-radius: 3px;
 }
 
-.p1-img:hover .proj-txt-hover, .p2-img:hover .proj-txt-hover, .p3-img:hover .proj-txt-hover {
+.p1-img:hover .proj-txt-hover,
+.p2-img:hover .proj-txt-hover,
+.p3-img:hover .proj-txt-hover {
   display: block;
 }
 
-#built-with, #repo {
+#built-with,
+#repo {
   font-style: italic;
   font-size: small;
   &.border-bottom {
@@ -244,7 +257,9 @@ a {
   .div1 {
     grid-area: 1 / 1 / 2 / 2;
   }
-  .div2, .div3, .div4 {
+  .div2,
+  .div3,
+  .div4 {
     height: auto;
   }
   .div2 {
