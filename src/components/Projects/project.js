@@ -69,20 +69,20 @@ function Project() {
           </div>
           <div className={`div3 ${animation ? "slideFromRight" : ""}`}>
             <a
-              href="https://pin-index-3d5f57e24919.herokuapp.com/spots"
+              href="https://heres-a-tip-689e97f325a7.herokuapp.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <div className="p2-img">
                 <div className="proj-txt-hover">
-                  <div>Portland Skate Spot Guide using CRUD operations.</div>
+                  <div>Tip calculator with split bill feature.</div>
                   <p id="built-with">
-                    Built with: Mongodb, Express, React, Node.js, JavaScript,
-                    HTML, CSS & deployed with Heroku.
+                    Built with: React, JavaScript,
+                    HTML, CSS & Sass deployed with Heroku.
                     <span id="repo" className="proj-txt-hover">
                       <a
                         id="repo-link"
-                        href="https://github.com/PeterwMcClelland/Pin"
+                        href="https://github.com/PeterwMcClelland/Heres-A-Tip"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -91,7 +91,7 @@ function Project() {
                     </span>
                   </p>
                 </div>
-                <p className="proj-title">Pin It</p>
+                <p className="proj-title">Here's A Tip</p>
               </div>
             </a>
           </div>
