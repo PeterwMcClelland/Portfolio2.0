@@ -77,8 +77,8 @@ function Project() {
                 <div className="proj-txt-hover">
                   <div>Tip calculator with split bill feature.</div>
                   <p id="built-with">
-                    Built with: React, JavaScript,
-                    HTML, CSS & Sass deployed with Heroku.
+                    Built with: React, JavaScript, HTML, CSS & Sass deployed
+                    with Heroku.
                     <span id="repo" className="proj-txt-hover">
                       <a
                         id="repo-link"
