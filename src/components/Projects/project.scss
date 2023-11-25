@@ -241,6 +241,17 @@ a {
   .projects-container {
     padding: 20px;
   }
+  %img-properties {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    background-position: unset;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+  }
   #repo:hover {
     display: none;
   }
