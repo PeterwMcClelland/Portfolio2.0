@@ -1,20 +1,8 @@
 import React from "react";
 
 function HeroSection({ skillRef, eduRef, projectRef, contactRef }) {
-  const scrollToSkill = () => {
-    skillRef.current.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const scrollToEducation = () => {
-    eduRef.current.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const scrollToProject = () => {
-    projectRef.current.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const scrollToContact = () => {
-    contactRef.current.scrollIntoView({ behavior: "smooth" });
+  const scrollToRef = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -39,18 +27,10 @@ function HeroSection({ skillRef, eduRef, projectRef, contactRef }) {
         </div>
       </div>
       <div className="scroll-nav">
-        <p className="scroll-more" onClick={scrollToSkill}>
-          SkillSet
-        </p>
-        <p className="scroll-more" onClick={scrollToProject}>
-          Projects
-        </p>
-        <p className="scroll-more" onClick={scrollToEducation}>
-          Education
-        </p>
-        <p className="scroll-more" onClick={scrollToContact}>
-          Contact
-        </p>
+        <p className="scroll-more" onClick={() => scrollToRef(skillRef)}>SkillSet</p>
+        <p className="scroll-more" onClick={() => scrollToRef(projectRef)}>Projects</p>
+        <p className="scroll-more" onClick={() => scrollToRef(eduRef)}>Education</p>
+        <p className="scroll-more" onClick={() => scrollToRef(contactRef)}>Contact</p>
       </div>
     </body>
   );

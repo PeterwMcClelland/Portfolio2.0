@@ -93,6 +93,29 @@
   cursor: pointer;
 }
 
+.nav-containers {
+  color: white;
+  display: flex;
+  align-items: baseline;
+}
+
+.SE {
+  color: #a5a5a5;
+  display: table;
+}
+
+.SE-nav {
+  color: white;
+  margin-block: auto;
+  font-size: x-small;
+  font-family: "Russo One", sans-serif;
+  padding-left: 5px;
+}
+
+.nav-container {
+  color: white;
+}
+
 .first {
   margin: 0;
   animation: nameFromLeft 2s forwards;

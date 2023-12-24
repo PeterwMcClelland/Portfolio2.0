@@ -12,57 +12,50 @@ function App() {
   const projectRef = useRef();
   const contactRef = useRef();
   const homeRef = useRef();
+  const lastScrollY = useRef(0);
 
-  const [lastScrollY, setLastScrollY] = useState(0);
   const [showNav, setShowNav] = useState(true);
 
-  const scrollToHome = () => {
+  const scrollToHome = () =>
     homeRef.current.scrollIntoView({ behavior: "smooth" });
-  };
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      if (currentScrollY > lastScrollY) {
-        setShowNav(false);
-      } else {
-        setShowNav(true);
-      }
-      setLastScrollY(currentScrollY);
+      setShowNav(currentScrollY <= lastScrollY.current);
+      lastScrollY.current = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [lastScrollY]);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div ref={homeRef} className="App">
       <div className={`nav ${showNav ? "" : "nav-hidden"}`}>
-        <div onClick={scrollToHome} className="nav-container">
-          PM
+        <div className="nav-containers">
+          <div onClick={scrollToHome} className="nav-container">
+            PM
+          </div>
+          <p className="SE-nav">
+            <span className="SE">Software </span>
+            <span className="SE">Engineer</span>
+          </p>
         </div>
       </div>
-      <HeroSection
-        homeRef={homeRef}
-        skillRef={skillRef}
-        eduRef={eduRef}
-        projectRef={projectRef}
-        contactRef={contactRef}
-      ></HeroSection>
+      <HeroSection {...{ homeRef, skillRef, eduRef, projectRef, contactRef }} />
       <div ref={skillRef}>
-        <SkillSet></SkillSet>
+        <SkillSet />
       </div>
       <div ref={projectRef}>
-        <Project></Project>
+        <Project />
       </div>
       <div ref={eduRef}>
-        <Education></Education>
+        <Education />
       </div>
       <div ref={contactRef}>
-        <Contact></Contact>
+        <Contact />
       </div>
     </div>
   );
