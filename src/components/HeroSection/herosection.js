@@ -26,6 +26,7 @@ function HeroSection({ skillRef, eduRef, projectRef, contactRef }) {
           <div className="hero-img"></div>
         </div>
       </div>
+      
       <div className="scroll-nav">
         <p className="scroll-more" onClick={() => scrollToRef(skillRef)}>SkillSet</p>
         <p className="scroll-more" onClick={() => scrollToRef(projectRef)}>Projects</p>
