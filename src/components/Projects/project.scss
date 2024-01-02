@@ -87,6 +87,7 @@ $hover-bg: rgba(10, 8, 8, 0.7);
   height: 100%;
   background: linear-gradient(to top, rgba(255, 255, 255, 0.3), transparent);
   pointer-events: none;
+  
 }
 
 .p1-img::before,
@@ -197,12 +198,14 @@ $hover-bg: rgba(10, 8, 8, 0.7);
   padding: 5px;
   margin: 10px;
   border-radius: 3px;
+  
 }
 
 .p1-img:hover .proj-txt-hover,
 .p2-img:hover .proj-txt-hover,
 .p3-img:hover .proj-txt-hover {
   display: block;
+  
 }
 
 #built-with,

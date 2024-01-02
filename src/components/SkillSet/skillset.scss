@@ -73,6 +73,7 @@ $icons: (
   HTML5: 17s,
 );
 
+
 @each $icon, $time in $icons {
   ##{$icon} {
     animation: shake $time infinite;
