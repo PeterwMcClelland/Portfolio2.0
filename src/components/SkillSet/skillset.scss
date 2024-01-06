@@ -1,3 +1,4 @@
+/* Icon Shake */
 $animation-duration: 1.5s;
 $shake-animation: (
   "0%, 10%": (
@@ -88,6 +89,8 @@ $icons: (
     }
   }
 }
+
+/* Fall Into Place */
 
 @keyframes fallIntoPlace {
   from {
