@@ -74,7 +74,6 @@ $icons: (
   HTML5: 17s,
 );
 
-
 @each $icon, $time in $icons {
   ##{$icon} {
     animation: shake $time infinite;
@@ -97,7 +96,7 @@ $icons: (
     transform: translateY(-100vh);
     opacity: 0;
   }
-  
+
   to {
     transform: translateY(0);
     opacity: 1;
