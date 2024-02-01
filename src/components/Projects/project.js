@@ -118,7 +118,7 @@ function Project() {
                     </span>
                   </p>
                 </div>
-                <p className="proj-title">Miso Presents</p>
+                <p className="proj-title">MOSO Presents</p>
               </div>
             </a>
           </div>
