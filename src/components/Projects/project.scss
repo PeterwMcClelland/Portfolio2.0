@@ -3,11 +3,13 @@ $text-color: var(--text-color);
 $link-color: var(--link-color);
 $hover-bg: rgba(10, 8, 8, 0.7);
 
-.projects-title {
-  color: rgb(5, 106, 201);
-  font-size: x-large;
-  border-bottom: solid $accent-color;
+.title-projects {
+  color: rgba(5, 106, 201, 0.9);
   inline-size: fit-content;
+  text-align: start;
+  margin: 0;
+  font-size: 3rem;
+  font-family: "Knewave", cursive;
 }
 
 .projects-container {
@@ -87,7 +89,6 @@ $hover-bg: rgba(10, 8, 8, 0.7);
   height: 100%;
   background: linear-gradient(to top, rgba(255, 255, 255, 0.3), transparent);
   pointer-events: none;
-  
 }
 
 .p1-img::before,
@@ -162,11 +163,14 @@ $hover-bg: rgba(10, 8, 8, 0.7);
   justify-content: start;
   transition: 0.3s;
   padding: 5px;
-  &:hover {
-    border-left-color: $link-color;
-    border-bottom-color: $link-color;
-    padding-left: 15px;
-  }
+}
+
+#repo:hover {
+  border-left-color: $link-color;
+  border-bottom-color: $link-color;
+  padding-left: 15px;
+  transition: 0.3s;
+  
 }
 
 .a-github {
@@ -198,20 +202,19 @@ $hover-bg: rgba(10, 8, 8, 0.7);
   padding: 5px;
   margin: 10px;
   border-radius: 3px;
-  
 }
 
 .p1-img:hover .proj-txt-hover,
 .p2-img:hover .proj-txt-hover,
 .p3-img:hover .proj-txt-hover {
   display: block;
-  
 }
 
 #built-with,
 #repo {
   font-style: italic;
   font-size: small;
+  transition: .3s;
   &.border-bottom {
     border-bottom: solid;
     transition: 0.3s;
