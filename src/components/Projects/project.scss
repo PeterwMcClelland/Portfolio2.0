@@ -23,6 +23,7 @@ $hover-bg: rgba(10, 8, 8, 0.7);
 
 .projects-h1 {
   text-align: center;
+  text-shadow: 3px 3px #4c4c4c;
 }
 
 .parent {
@@ -170,7 +171,6 @@ $hover-bg: rgba(10, 8, 8, 0.7);
   border-bottom-color: $link-color;
   padding-left: 15px;
   transition: 0.3s;
-  
 }
 
 .a-github {
@@ -208,13 +208,14 @@ $hover-bg: rgba(10, 8, 8, 0.7);
 .p2-img:hover .proj-txt-hover,
 .p3-img:hover .proj-txt-hover {
   display: block;
+  text-shadow: 2px 2px #373737;
 }
 
 #built-with,
 #repo {
   font-style: italic;
   font-size: small;
-  transition: .3s;
+  transition: 0.3s;
   &.border-bottom {
     border-bottom: solid;
     transition: 0.3s;

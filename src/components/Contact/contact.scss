@@ -33,6 +33,7 @@
   font-family: "Jost", sans-serif;
   color: white;
   margin: 0;
+  text-shadow: 3px 3px #4c4c4c;
 
   @media (max-width: 600px) {
     font-size: large;
@@ -41,6 +42,10 @@
   @media (max-width: 425px) {
     font-size: larger;
   }
+}
+
+#icon-header {
+  text-shadow: 1.5px 1.5px #4c4c4c;
 }
 
 .education-h1 {

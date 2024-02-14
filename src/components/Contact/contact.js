@@ -34,7 +34,7 @@ function Contact() {
             development.
           </p>
 
-          <h2 className="icon-header">
+          <h2 id="icon-header" className="icon-header">
             Feel To Reach Out Through my Platforms
           </h2>
 

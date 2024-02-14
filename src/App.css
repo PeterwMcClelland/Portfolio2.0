@@ -120,12 +120,14 @@
   margin: 0;
   animation: nameFromLeft 2s forwards;
   color: var(--h1-color);
+  text-shadow: 3px 3px #4c4c4c;
 }
 
 .last {
   margin: 0px;
   animation: nameFromRight 2s forwards;
   color: var(--h1-color);
+  text-shadow: 3px 3px #4c4c4c;
 }
 
 @keyframes nameFromLeft {
@@ -157,6 +159,8 @@
   font-size: 75px;
   font-family: initial;
   display: inline-block;
+  text-shadow: 3px 3px #103300;
+  
 }
 
 .dot {
@@ -167,6 +171,7 @@
   font-family: initial;
   display: inline-block;
   animation: dotFall 2s forwards;
+  text-shadow: 2px 2px #103300;
 }
 
 @keyframes dotFall {
@@ -237,6 +242,7 @@
   padding-top: 15px;
   padding-right: 15px;
   font-family: "Knewave", cursive;
+  text-shadow: 2px 2px #4c4c4c;
 }
 
 .scroll-more:hover {
@@ -244,7 +250,7 @@
   transition: 0.3s;
   border-bottom: solid var(--link-color);
   color: var(--link-color);
-
+  text-shadow: 3px 3px #103300;
   cursor: pointer;
   font-family: "Knewave", cursive;
 }
@@ -295,10 +301,12 @@
   color: var(--text-color);
   padding-top: 5%;
   padding-bottom: 5%;
+  text-shadow: 2px 2px #4c4c4c;
 }
 
 .resume-link:hover {
   cursor: pointer;
+  text-shadow: 2px 2px #103300;
 }
 
 .hyper-link {
