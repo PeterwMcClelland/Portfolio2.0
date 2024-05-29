@@ -166,6 +166,8 @@ $hover-bg: rgba(10, 8, 8, 0.7);
   padding: 5px;
 }
 
+
+
 #repo:hover {
   border-left-color: $link-color;
   border-bottom-color: $link-color;
@@ -178,6 +180,17 @@ $hover-bg: rgba(10, 8, 8, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.a-github:hover {
+  color: var(--link-color);
+  margin-left: 10px;
+ 
+}
+
+#github-link-proj:hover {
+  border: solid 2px var(--text-color);
+  border-width: 0 0 2px 2px;
 }
 
 @keyframes slideFromRight {
