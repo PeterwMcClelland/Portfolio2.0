@@ -35,7 +35,7 @@ function Contact() {
           </p>
 
           <h2 id="icon-header" className="icon-header">
-            Feel To Reach Out Through my Platforms
+            Reach Out Through Any Platform
           </h2>
 
           <footer className="contact-icons">
