@@ -33,7 +33,7 @@ function Project() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub Profile  {gitIcon}
+                GitHub Profile {gitIcon}
               </a>
             </div>
           </div>
